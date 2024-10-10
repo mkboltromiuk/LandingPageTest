@@ -54,7 +54,7 @@
 
 
         .all {
-          margin: 0 4.5%;
+          margin: 0 3.5%;
        /// margin-left:3.5%;
         @include mq(xxlarge){
             margin: 0 3%;
@@ -64,11 +64,11 @@
         }
 
         @include mq(after-xlarge){
-            margin: 0 1.5%;
+            margin: 0 1.8%;
         }
 
         @include mq(large){
-            margin: 0 1%;
+            margin: 0 1.2%;
         }
 
         @include mq(medium-large){
@@ -135,10 +135,25 @@
 
          width: calc(100% - (100% * 0.5));
 
+       
+
+         @include mq(mid-after-large){
+            width: calc(100% - (100% * 0.48));
+         } 
+
+         @include mq(large){
+            width: calc(100% - (100% * 0.48));
+         }
+
+
+
          @include mq(medium-large){
+          
             display: none;
          }
-               
+
+         
+      
     }
 }
 
