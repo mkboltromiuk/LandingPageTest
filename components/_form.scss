@@ -1,0 +1,328 @@
+
+.main{
+
+
+
+    &__form{
+        margin-top: 15%;
+        color: white;
+  
+        &__h2{
+          text-align: center;
+          margin-top: 10%;
+         
+  
+         
+         }
+   
+         &__p{
+          margin-top: 2%;
+          margin-left: 8%;
+          margin-right: 8%;
+          text-align: center;
+          font-size: 20px;
+          color: #DAD8DE;
+          
+          
+         }
+       
+        &__container{
+          display: flex;
+          margin-top: 5%;
+          
+          @include mq(large){
+            flex-direction: column;
+            
+          }
+  
+  
+          &__art{
+            
+             
+              width:480px;
+              height: 450px;
+     
+              margin-left: 20%;
+              
+              border-radius: 30px;
+              background-color: black;
+
+              @include mq(large){
+                margin: 0 auto;
+              }
+
+              @include mq (medium-samll){
+              ///margin-left: 15%;
+              
+                transform: scale(0.8);
+    transform-origin: calc(50% - (45% / 2))  0%; /* lub top center */
+    transition: transform 1.5s ease;
+   
+               
+              }
+
+              @include mq (after-medium){
+              
+                transform: scale(0.72);
+    transform-origin: calc(50% - (68% / 2))  0%; /* lub top center */
+    transition: transform 1.5s ease;
+               
+              }
+           
+            
+         
+              &__wrapper{
+                  display: block;
+                  width: 480px;
+                  height: 200px;
+                  margin: 1% 0 ;
+                 position: relative;
+                  top: 8%;
+                  right: 5.5%;
+                 
+              
+  
+                  &__h3{
+                      font-size: 30px;
+                      text-align: left;
+                      margin-left: 15%;
+                 
+                   
+              
+                  }
+      
+      
+                  &__p{
+                    font-size: $regular-font-size;
+                    margin-top: 2.5%;
+                    width: 65%;
+                    margin-left: 15%;
+                    line-height: 18px;
+  
+                  }
+      
+      
+                  &__div{
+                    margin-top: 5%;
+                    margin-left: 15%;
+                    
+                 
+                      &__inpFN{
+                          width: 190px;
+                          padding: 2% 2%;
+                          
+                          color: hsl(0deg, 0% ,100%, 60%);
+                          background: rgba(255, 255, 255, 0.05);
+                          border: 1px solid rgba(255, 255, 255, 0.2);
+                          border-radius: 5px;
+  
+                          
+  
+                      }
+      
+                      &__inpLN{
+                      width: 190px;
+                      padding: 2% 2%;
+                      
+                      color: hsl(0deg, 0% ,100%, 60%);
+                      background: rgba(255, 255, 255, 0.05);
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                      border-radius: 5px;
+  
+                      }
+                  }
+        
+      
+                  &__email{
+  
+                      width: 385px;
+                      margin-left: 15%;
+                      margin-top: 2.5%;
+                      padding: 2% 2%;
+                      display: block;
+  
+                      color: hsl(0deg, 0% ,100%, 60%);
+                      background: rgba(255, 255, 255, 0.05);
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                      border-radius: 5px;
+
+                      @include mq (medium-samll){
+                      ///margin-left: 5%;
+                        ///margin-right: 15%;
+                        
+                       
+                      }
+                      
+                  }
+      
+      
+                  &__phone{
+                      width: 385px;
+                      margin-left: 15%;
+                      margin-top: 2.5%;
+                      display: block;
+                      padding: 2% 2%;
+                      color: hsl(0deg, 0% ,100%, 60%);
+                      background: rgba(255, 255, 255, 0.05);
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                      border-radius: 5px;
+                  }
+      
+                  &__message{
+                      height: 100px;
+                      width: 385px;
+                      
+                      margin-left: 15%;
+                      display: block;
+                      margin-top: 2.5%;
+                    
+                      padding-bottom: 10%;
+                      padding-left: 2% ;
+                      color: hsl(0deg, 0% ,100%, 60%);
+                      background: rgba(255, 255, 255, 0.05);
+                      border: 1px solid rgba(255, 255, 255, 0.2);
+                      border-radius: 5px;
+                  }
+      
+      
+                  &__btn{
+                      margin-left: 15%;
+                      margin-top: 2.5%;
+                      width: 385px;
+                      padding: 2% 2%;
+                 
+                      @include extra-btn
+                      
+                    
+  
+                      
+                  }
+              }
+             }
+  
+             &__artS{
+                color: white;
+                margin-top: 2%;
+                margin-left: 5%;
+               /// order: 1;
+         
+  
+              &__p{
+          
+                  width: 65%;
+                  line-height: 125%;
+                  word-spacing: 1px;
+                  font-size: 16.5px;
+                  
+                
+                 
+                  
+                  @include mq(large){
+                    margin: auto;
+                  }
+
+
+                  @include mq(large){
+                    margin: auto;
+                  }
+
+                  @include mq(medium-samll){
+                    transform: translate(0,-80px);
+                    width: 85%;
+                  }
+  
+                
+              }
+  
+              &__div{
+                  margin-top: 15%;
+                  
+                  @include mq(large){
+                    margin: 0 auto;
+                    display: flex;
+                 
+                  justify-content: center;
+                  
+                  gap: 5%;
+                  }
+
+                  @include mq(medium-samll){
+                    transform: translate(0,-60px);
+               
+                  }
+
+  
+                  &__inside{
+                      
+                    margin-top: 5%;
+                    display: flex;
+                   
+                   align-items: center;
+                  
+                      &__imgF{
+                          display: block;
+                     
+                         }
+  
+                         &__p{
+                        
+                          margin-left: 5%;
+
+                          @include mq(medium-large){
+                            margin: 0 auto;
+                           padding-left: 10%;
+                           width: 50px;
+                            
+                          }
+                        
+                         }
+  
+                  }
+  
+                 
+  
+                 &__insideS{
+                    margin-top: 5%;
+                  display: flex;
+                  align-items: center;
+                
+                
+
+                  &__imgS{
+                      display: block;
+                    
+                   
+                    }
+  
+                    &__p{
+                      margin-left: 5%;
+                 
+                  
+                      @include mq(medium-large){
+                        margin: 0 auto;
+                       padding-left: 5%;
+                       width: 200px;
+                        
+                      }
+                    }
+  
+                 }
+          
+              
+  
+  
+  
+              }
+            
+             
+             }
+  
+              }
+  
+  
+        }
+
+
+
+
+}

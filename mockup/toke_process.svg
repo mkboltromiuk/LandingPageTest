@@ -1,0 +1,112 @@
+<svg width="947" height="594" viewBox="0 0 947 594" fill="none" xmlns="http://www.w3.org/2000/svg">
+  
+ 
+  <defs>
+    
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+text{
+   font-family: "Open Sans"
+}
+
+     @keyframes colorSwitch {
+            0% { fill: #0075FF; }
+            25% { fill: #d7e3fc; }
+            50% { fill: #0075FF; }
+            75% { fill: #d7e3fc; }
+            100% { fill: #0075FF; }
+        }
+
+        .crAll {
+            animation: colorSwitch 4s infinite;
+        }
+    
+     
+  
+    </style>  
+  </defs>
+   
+  
+<path d="M55 495.002L151.227 238.976L266.75 377.03L380.194 211.777L493.639 316.772L609.275 118.652L725.46 292.121L840 73.002" stroke="url(#paint0_linear_428_2614)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="127.887" y="180.82">Asset </tspan><tspan x="101.148" y="206.82">registration</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="241.285" y="435.82">Value </tspan><tspan x="211.051" y="461.82">assessment&#x2028;</tspan><tspan x="266.5" y="487.82">&#x2028;</tspan><tspan x="266.5" y="513.82">&#x2028;</tspan><tspan x="266.5" y="539.82">&#x2028;</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="332.484" y="141.82">Document </tspan><tspan x="326.85" y="167.82">preparation</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="469.545" y="374.82">Legal </tspan><tspan x="438.021" y="400.82">Compliance </tspan><tspan x="441.029" y="426.82">Verification&#x2028;</tspan><tspan x="493.5" y="452.82">&#x2028;</tspan><tspan x="493.5" y="478.82">&#x2028;</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="566.941" y="92.82">KYC/AML&#x2028;</tspan><tspan x="609.5" y="118.82">&#x2028;</tspan><tspan x="609.5" y="144.82">&#x2028;</tspan><tspan x="609.5" y="170.82">&#x2028;</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="674.859" y="347.82">Creation of </tspan><tspan x="654.684" y="373.82">Smart Contract</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="791.787" y="20.82">Emission of &#10;</tspan><tspan x="816.67" y="46.82">tokens&#x2028;</tspan><tspan x="847.5" y="72.82">&#x2028;</tspan><tspan x="847.5" y="98.82">&#x2028;</tspan><tspan x="847.5" y="124.82">&#x2028;</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Open Sans" font-size="20" letter-spacing="0em"><tspan x="0.0488281" y="540.82">Selection of </tspan><tspan x="3.62305" y="566.82">Asset Type</tspan></text>
+<g filter="url(#filter0_f_428_2614)">
+<rect class="crAll" x="259" y="367" width="14.1509" height="15" rx="7.07547" fill="#0075FF"/>
+</g>
+<g filter="url(#filter1_f_428_2614)">
+<rect class="crAll" x="144.51" y="235" width="14.1509" height="15" rx="7.07547" fill="#0075FF"/>
+</g>
+<g filter="url(#filter2_f_428_2614)">
+<rect class="crAll" x="374" y="207" width="14.1509" height="15" rx="7.07547" fill="#0075FF"/>
+</g>
+<g filter="url(#filter3_f_428_2614)">
+<rect class="crAll" x="486" y="307" width="14.1509" height="15" rx="7.07547" fill="#0075FF"/>
+</g>
+<g filter="url(#filter4_f_428_2614)">
+<rect class="crAll" x="602" y="114" width="14.1509" height="15" rx="7.07547" fill="#0075FF"/>
+</g>
+<g filter="url(#filter5_f_428_2614)">
+<path d="M719 289.075C719 285.168 722.168 282 726.075 282C729.983 282 733.151 285.168 733.151 289.075V289.925C733.151 293.832 729.983 297 726.075 297C722.168 297 719 293.832 719 289.925V289.075Z" fill="#0075FF"/>
+<path class="crAll" d="M719 289.075C719 285.168 722.168 282 726.075 282C729.983 282 733.151 285.168 733.151 289.075V289.925C733.151 293.832 729.983 297 726.075 297C722.168 297 719 293.832 719 289.925V289.075Z" fill="#0075FF"/>
+</g>
+<g filter="url(#filter6_f_428_2614)">
+<rect class="crAll" x="48" y="487" width="14.1509" height="15" rx="7.07547" fill="#0075FF"/>
+</g>
+<g filter="url(#filter7_f_428_2614)">
+<path d="M833 72.0755C833 68.1678 836.168 65 840.075 65C843.983 65 847.151 68.1678 847.151 72.0755V72.9245C847.151 76.8322 843.983 80 840.075 80C836.168 80 833 76.8322 833 72.9245V72.0755Z" fill="#0075FF"/>
+<path class="crAll" d="M833 72.0755C833 68.1678 836.168 65 840.075 65C843.983 65 847.151 68.1678 847.151 72.0755V72.9245C847.151 76.8322 843.983 80 840.075 80C836.168 80 833 76.8322 833 72.9245V72.0755Z" fill="#0075FF"/>
+</g>
+<defs>
+<filter id="filter0_f_428_2614" x="255" y="363" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter1_f_428_2614" x="142.51" y="231" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter2_f_428_2614" x="370" y="203" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter3_f_428_2614" x="482" y="303" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter4_f_428_2614" x="598" y="110" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter5_f_428_2614" x="715" y="278" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter6_f_428_2614" x="44" y="483" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<filter id="filter7_f_428_2614" x="829" y="61" width="22.1504" height="23" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_428_2614"/>
+</filter>
+<linearGradient id="paint0_linear_428_2614" x1="840" y1="284" x2="55" y2="284" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0075FF"/>
+<stop offset="0.48" stop-color="#C4D6EB"/>
+</linearGradient>
+</defs>
+</svg>

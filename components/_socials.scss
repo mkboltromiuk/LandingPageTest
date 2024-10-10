@@ -1,0 +1,58 @@
+
+
+.main{
+
+
+    &__community{
+        margin-top: 10%;
+  margin-bottom: 10%;
+
+        &__art{
+            
+            margin: 0 auto;
+           text-align: center;
+
+           @include mq(medium-large){
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+           }
+
+
+    color: white;
+
+            &__h2{
+         font-size: 40px;
+         margin: auto;
+         text-align: center;
+
+            }
+
+            &__div{
+        
+                
+                
+                margin: auto;
+                margin-top: 2.5%;
+               
+
+                &__img{
+                    border: 1px solid gray;
+                    margin: 0 1% 0 1%;
+                    border-radius: 10px;
+                    padding: 2.5%;
+
+
+                    @include mq(medium-large){
+                       margin: 2%;
+                       }
+                }
+            }
+
+        }
+
+
+      }
+
+
+}

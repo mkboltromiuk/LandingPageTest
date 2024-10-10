@@ -1,0 +1,153 @@
+
+@import './components/varMix';
+@import './components/rwd';
+@import './components/header';
+@import './components/mainHero';
+@import './components/assetType';
+@import './components/assetDao';
+@import './components/productFeat';
+@import './components/tokeProcess';
+@import './components/faq';
+@import './components/form';
+@import './components/socials';
+@import './components/footer';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+   ///overflow: hidden;
+}
+
+
+
+
+
+
+
+body{
+
+    font-family: $regular-font-family;
+   // background-color: #13192d;
+ 
+  /// background-color: #1e1e1e;
+  background-color: #13192d;
+}
+
+.wrapper{
+    
+    padding-bottom: 5%;
+    margin: 0 auto;
+   //margin-top: 2.5%;
+
+   overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+  
+    margin-top: 5%;
+    
+           
+}
+
+
+
+
+
+
+
+
+.longGradient{
+    position: relative;
+    z-index: 2;
+}
+
+.imgLongGradient{
+    position: absolute;
+    z-index: -2;
+   width: 95%;
+    top: -10%;
+    left: -10%;
+}
+
+
+
+
+
+
+
+h2{
+    font-size: $section-title-text;
+    background: #F6F8F9;
+background: radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+p{
+   font-size: $regular-font-size;
+   font-weight: 300;
+}
+
+h4{
+    font-size: 24px ;
+}
+
+
+
+
+  

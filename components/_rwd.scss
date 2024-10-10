@@ -1,0 +1,31 @@
+
+// Definiowanie mapy breakpointów jako wartości liczbowych
+$breakpoints: (
+  xsmall: 350px,
+  small: 390px,
+  after-medium:425px,
+  medium-samll:500px,
+  medium-to-small:600px,
+  medium: 780px,
+  medium-large: 950px,
+  large: 1024px,
+  after-xlarge:1150px,
+  xlarge: 1300px,
+  xxlarge: 1440px
+);
+
+
+// Definicja mixina do zapytań o media
+// Definicja mixina do zapytań o media
+@mixin mq($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint); // Pobieranie wartości z mapy
+  
+    @if ($size) {
+      @media (max-width: #{$size}) { // Generowanie zapytania o media
+        @content; // Przekazywanie treści do mixina
+      }
+    } @else {
+      @error '"#{$breakpoint}" - błąd'; // Obsługa błędów
+    }
+  }
+  

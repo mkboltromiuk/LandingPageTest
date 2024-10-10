@@ -1,0 +1,246 @@
+
+.main{
+
+
+&__hero{
+    position: relative;
+    z-index: 1;
+
+
+    &__gradient{
+       width: 50%;
+        position: absolute;
+        z-index: -1;
+        bottom: 68%;
+       right: 5%;
+    }
+
+       &__FFront{
+
+       &__SingUp{
+/// wystylować 
+
+           text-align: center;
+
+     
+           ///width: ;
+           &__btn{
+
+                  
+             
+              
+               @include glass-dark;
+
+               color: #4F91DF;
+               border-radius: 50px;
+               background-color: black;
+               border: 2px solid #023E86;
+            
+           ///@include neon-glow;
+            width: 320px;
+            padding: 1% 2%;
+
+            @include mq(medium-large){
+                   margin-top: 5%;
+              }
+
+              @include mq(medium){
+                margin-top: 2%;
+              }
+
+              @include mq(medium-samll){
+                margin-top: 12vh;
+                width: 220px;
+            transition:  0.5s ease ;
+         
+              }
+
+        
+              @include mq(medium-samll){
+                margin-top: 7vh;
+                transition: margin-top 0.5s ease ;
+              }
+
+              @include mq(small){
+                margin-top: 10vh;
+                transition: margin-top 0.5s ease ;
+              }
+
+
+               &__span{
+                  
+                  
+                   padding: 1% 1.5% 1% 1.5% ;
+                   background-color: #4F91DF ;
+                   border-radius: 40px;
+                   color: black;
+            
+                  
+                   
+          
+               }
+               
+           }
+       }
+
+       &__bigText{
+
+       
+          // width: 50vw;
+
+          width: 622px;
+          height: 168px;
+          
+          font-family: $regular-font-family;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 64px;
+          line-height: 84px;
+          /* or 131% */
+          text-align: center;
+          ///letter-spacing: -0.0506em;
+          
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 6.85%, #023E86 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          ///text-fill-color: transparent;
+          
+
+
+          
+           margin: auto;
+           text-align: center;
+           margin-top: 1.2%;
+
+          
+
+
+           
+
+           @include mq(medium){
+            margin-top: 8%;
+            width:550px;
+            height: auto;
+            font-size: 54px;
+           }
+
+           @include mq(medium-to-small){
+         
+            width:350px;
+          
+           }
+
+
+       }
+
+       }
+
+       &__FAnima{
+           display: block;
+           ///margin-bottom: 1.5%;
+           
+           @include mq(medium-samll){
+            display: none;
+          }
+
+           ///background-color: grey;
+           ////width: 25vw;
+           height: 300px;
+
+
+           .animeHero{
+            display: block;
+            width: 65vw;
+            height: auto;
+            ///min-height:350px;
+            //min-width: 400px;
+            margin: auto;
+
+            @include mq(xlarge){
+                width:calc(60vw*1.5);
+            }
+
+            @include mq(medium){
+                width:calc(60vw*1.8);
+               margin-left: -5%;
+            }
+
+            
+           
+        }
+           
+           
+       }
+
+
+       &__FInfo{
+         //  width: 80vw;
+           ///height: 25vh;
+           margin: auto;
+           margin-top: 20%;
+      
+           
+
+           &__h3{
+               text-align: center;
+               color: white;
+           /// margin-top: calc(5%);
+
+            
+            @include mq(medium-large){
+                //margin-top: -2.5vh;
+               }
+
+
+               @include mq(medium-samll){
+              margin-top: -10vh;
+              transition: margin-top 0.5s ease;
+               }
+
+
+           }
+
+             &__all{
+               margin-top: 1.5%;
+               display: flex;
+               flex-wrap: wrap;
+               justify-content: center;
+               gap: 5%;
+               
+                   &__brands{
+                       border: 1px solid gray;
+                       border-radius: 15px;
+                       padding: 1.5%;
+                     
+                      
+
+                       
+                        width: calc(100% - (100% * 0.89));
+
+
+                        @include mq(xxlarge){
+                            margin-top: 2.5%;
+                            width: calc(100% - (100% * 0.83));
+                        }
+
+
+                        @include mq(after-xlarge){
+                            margin-top: 2.5%;
+                           width: calc(100% - (100% * 0.81));
+                        }
+
+                        @include mq(medium){
+                            margin-top: 2.5%;
+                            width: calc(100% - (100% * 0.81));
+                        }
+                       
+     
+                   }
+     
+                 }
+          
+       }
+
+   }
+}

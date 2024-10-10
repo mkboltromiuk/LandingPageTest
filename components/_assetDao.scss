@@ -1,0 +1,144 @@
+
+.main{
+
+
+
+&__assetDao{
+
+    position: relative;
+    z-index: 2;
+color: white;
+margin-top: 12.5%;
+
+&__h2{
+font-size: 35px;
+width: 80%;
+margin: auto;
+margin-bottom: 2%;
+
+}
+
+&__imgGradientII{
+position: absolute;
+top: -25%;
+z-index: -1;
+
+}
+    &__TAsset{
+     
+        display: flex;
+        gap: 5%;
+        margin-left: 18%;
+        margin-right: 10%;
+       
+       @include mq(after-xlarge){
+        margin: auto;
+        flex-direction: column;
+        gap: 80px;
+        
+       }
+        
+
+
+        &__divOne{
+
+////@include glass;
+
+
+border-radius: 20px;
+&__img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 20px;
+  
+    @include mq(after-xlarge){
+        width: 45%;
+        min-width:350px ;
+    }
+   
+}
+        }
+      
+
+        &__divTwo{
+    margin: auto;
+border-radius: 20px;
+width: 40%;
+min-width:350px ;
+text-align: center;
+@include glass-dark-blue;
+
+
+
+&__h3{
+text-align: center;
+width: 75%;
+font-size: 20px;
+margin: auto;
+margin-top: 5%;
+
+line-height: 25px;
+}
+           
+
+
+            &__pOne{
+               
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                margin-top: 5%;
+                line-height: 20px;
+                color: hsl(0, 0%, 84%);
+                
+                
+
+            }
+
+            &__pTwo{
+
+               
+                text-align: left;
+                width: 75%;
+                margin: auto;
+                margin-top: 5%;
+                line-height: 20px;
+              
+            }
+
+            &__btn{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5%;
+                @include btn-def;
+                ///text-indent: -25px;
+                
+          
+                margin: auto;
+                color: white;
+                width: 40%;
+             
+                height: 12%;
+                margin-bottom: 5%;
+                @include mq(after-xlarge){
+                   margin-bottom: 8%;
+                }
+                
+
+
+                &__img{
+                    ///margin-left: 1.5%;
+                    
+               
+                }
+
+            }
+        }
+        
+
+    }
+}
+}

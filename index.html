@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="stylesheet" href="./style.scss" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <img src="/logo.svg" alt="" class="header__logo" />
+                <nav class="header__navbar">
+                    <a class="header__navbar__aboutPlatfrom all" href="/"
+                        >Asset types</a
+                    >
+                    <a class="header__navbar__assetTypes all" href="/"
+                        >Features</a
+                    >
+                    <a class="header__navbar__process all" href="/">Process</a>
+                    <a class="header__navbar__docs all" href="/">FAQ</a>
+                    <a class="header__navbar__contact all" href="/">Contact</a>
+                    <a class="header__navbar__contact all" href="/"
+                        >Pitch Deck</a
+                    >
+                </nav>
+                <button class="header__btn-waitList">Join the waitlist</button>
+            </header>
+
+            <main class="main">
+                <section class="main__hero">
+                    <img
+                        class="main__hero__gradient"
+                        src="/glow_svg/blue_gradient.svg"
+                        alt=""
+                    />
+                    <article class="main__hero__FFront">
+                        <div class="main__hero__FFront__SingUp">
+                            <button class="main__hero__FFront__SingUp__btn">
+                                <span
+                                    class="main__hero__FFront__SingUp__btn__span"
+                                    >New</span
+                                >
+                                Sing up for beta tests!
+                            </button>
+                        </div>
+                        <h1 class="main__hero__FFront__bigText">
+                            All-in-One Asset Tokenization Platform
+                        </h1>
+                    </article>
+
+                    <article class="main__hero__FAnima">
+                        <!-- prettier-ignore -->
+                        <svg class="animeHero" preserveAspectRatio="xMidYMid meet" width="1000" height="480" viewBox="0 0 1000 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                              <style>
+                                @keyframes lowLevel {
+                                  0% {
+                                    stroke: transparent;
+                                  }
+                          
+                                  25% {
+                                    stroke: #caf0f8;
+                                  }
+                          
+                                  50% {
+                                    stroke: transparent;
+                                  }
+                          
+                                  100% {
+                                    stroke: transparent;
+                                  }
+                                }
+                          
+                                @keyframes highLevel {
+                                  0% {
+                                    stroke: transparent;
+                                  }
+                          
+                                  25% {
+                                    stroke: transparent;
+                                  }
+                          
+                                  50% {
+                                    stroke: transparent;
+                                  }
+                          
+                                  75% {
+                                    stroke: #ada8ee;
+                                  }
+                          
+                                  100% {
+                                    stroke: transparent;
+                                  }
+                                }
+                          
+                                .blockLow {
+                                  animation: lowLevel 7s infinite;
+                                }
+                          
+                                .blockHigh {
+                                  animation: highLevel 7s infinite;
+                                  animation-delay: 5s;
+                                }
+                                
+                              </style>
+                            </defs>
+                            <g id="cr1" filter="url(#filter0_f_249_222)">
+                              <circle cx="386.5" cy="390.5" r="3.5" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr2"  filter="url(#filter1_f_249_222)">
+                              <ellipse cx="611.5" cy="391" rx="3.5" ry="3" fill="#5A9CEB" />
+                            </g>
+                            <g  id="cr3" filter="url(#filter2_f_249_222)">
+                              <ellipse cx="812.5" cy="393" rx="3.5" ry="3" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr4"  filter="url(#filter3_f_249_222)">
+                              <circle cx="192.5" cy="390.5" r="3.5" fill="#5A9CEB" />
+                            </g>
+                            <path id="path1" d="M190 402V338.71C190 327.664 198.954 318.71 210 318.71H438.29C448.623 318.71 457 310.333 457 300V300" stroke="#5C9FEE" />
+                            <path id="path2" d="M810 402V337.71C810 326.664 801.046 317.71 790 317.71H561.71C551.377 317.71 543 309.333 543 299V299" stroke="#5C9FEE" />
+                            <path id="path3" d="M386 402V356.92C386 345.875 394.954 336.92 406 336.92H444C455.046 336.92 464 327.966 464 316.92V300" stroke="#5C9FEE" />
+                            <path id="path4" d="M609 403V357.92C609 346.875 600.046 337.92 589 337.92H551C539.954 337.92 531 328.966 531 317.92V301" stroke="#5C9FEE" />
+                            <path id="path5" d="M455 276H354C342.954 276 334 267.046 334 256V218.5" stroke="#5C9FEE" />
+                            <path id="path6" d="M454 291H198C186.954 291 178 282.046 178 271V102" stroke="#5C9FEE" />
+                            <path id="path7" d="M454 284H258C246.954 284 238 275.046 238 264V135.646C238 124.601 246.954 115.646 258 115.646H320.08C328.721 115.646 335.726 108.641 335.726 100V100" stroke="#5C9FEE" />
+                            <path id="path8" d="M544 290H818C829.046 290 838 281.046 838 270V102" stroke="#5C9FEE" />
+                            <path id="path9" d="M544 283H765C776.046 283 785 274.046 785 263V140.666C785 129.62 776.046 120.666 765 120.666H692.5C681.454 120.666 672.5 111.711 672.5 100.666V99" stroke="#5C9FEE" />
+                            <path id="path10" d="M543 275H646C657.046 275 666 266.046 666 255V218.5" stroke="#5C9FEE" />
+                            <path id="path11" d="M454 268H436C424.954 268 416 259.046 416 248V188C416 176.954 424.954 168 436 168H445" stroke="#5C9FEE" />
+                            <path id="path12" d="M543.732 268H560C571.046 268 580 259.046 580 248V138.513C580 127.467 571.046 118.513 560 118.513H519.513C509.841 118.513 502 110.672 502 101V101" stroke="#5C9FEE" />
+
+                            <rect class="blockLow" x="876" y="465" width="134" height="67" rx="12" transform="rotate(180 876 465)" fill="#323442" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="24" font-weight="bold" letter-spacing="0px">
+                              <tspan x="797" y="439.684">AI</tspan>
+                            </text>
+                            <rect class="blockLow" x="461" y="465" width="140" height="67" rx="12" transform="rotate(180 461 465)" fill="#323442" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="24" font-weight="bold" letter-spacing="0px">
+                              <tspan x="326.5" y="439.684">Blockchain</tspan>
+                            </text>
+                            <rect class="blockLow" x="678" y="465" width="134" height="67" rx="12" transform="rotate(180 678 465)" fill="#323442" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="24" font-weight="bold" letter-spacing="0px">
+                              <tspan x="585" y="439.684">DeFi</tspan>
+                            </text>
+                            <rect class="blockLow" x="255" y="465" width="134" height="67" rx="12" transform="rotate(180 255 465)" fill="#323442" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="24" font-weight="bold" letter-spacing="0px">
+                              <tspan x="160.5" y="439.684">RWA</tspan>
+                            </text>
+                            <g id="cr5" opacity="0"  filter="url(#filter4_f_249_222)">
+                              <ellipse cx="439.5" cy="253" rx="3.5" ry="2" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr6" opacity="0" filter="url(#filter5_f_249_222)">
+                              <ellipse cx="443.5" cy="244.5" rx="3.5" ry="2.5" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr7" opacity="0" filter="url(#filter6_f_249_222)">
+                              <ellipse cx="469.5" cy="242" rx="3.5" ry="2" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr8" opacity="0" filter="url(#filter7_f_249_222)">
+                              <ellipse cx="504.5" cy="239.5" rx="3.5" ry="2.5" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr9" opacity="0" filter="url(#filter8_f_249_222)">
+                              <ellipse cx="530.5" cy="238" rx="3.5" ry="2" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr10" opacity="0" filter="url(#filter9_f_249_222)">
+                              <ellipse cx="554.5" cy="243" rx="3.5" ry="2" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr11" opacity="0" filter="url(#filter10_f_249_222)">
+                              <ellipse cx="565.5" cy="243" rx="3.5" ry="2" fill="#5A9CEB" />
+                            </g>
+                            <g id="cr12" opacity="0" filter="url(#filter11_f_249_222)">
+                              <ellipse cx="553.5" cy="272.5" rx="3.5" ry="2.5" fill="#5A9CEB" />
+                            </g>
+                            <g filter="url(#filter12_di_249_222)">
+                              <rect x="447" y="247" width="100" height="61" rx="12" fill="url(#paint0_linear_249_222)" shape-rendering="crispEdges" />
+                              <rect x="447.5" y="247.5" width="99" height="60" rx="11.5" stroke="url(#paint1_linear_249_222)" shape-rendering="crispEdges" />
+                              <path d="M465.624 285.104H467.689L471.802 295.245H469.686L468.85 293.156H464.486L463.616 295.245H461.5L465.624 285.104ZM466.669 287.793L465.234 291.274H468.095L466.669 287.793Z" fill="white" />
+                              <path d="M478 288.79L476.771 289.955C476.272 289.486 475.819 289.252 475.411 289.252C475.188 289.252 475.014 289.297 474.888 289.387C474.762 289.476 474.699 289.588 474.699 289.721C474.699 289.822 474.739 289.915 474.819 290C474.899 290.085 475.096 290.201 475.411 290.348L476.138 290.693C476.904 291.052 477.43 291.417 477.716 291.789C478.002 292.162 478.144 292.599 478.144 293.099C478.144 293.765 477.886 294.322 477.37 294.767C476.854 295.213 476.162 295.436 475.294 295.436C474.141 295.436 473.219 295.009 472.531 294.154L473.753 292.892C473.986 293.149 474.258 293.357 474.571 293.516C474.883 293.675 475.16 293.754 475.403 293.754C475.665 293.754 475.876 293.694 476.036 293.575C476.195 293.456 476.275 293.317 476.275 293.161C476.275 292.872 475.987 292.589 475.41 292.313L474.741 291.996C473.461 291.385 472.821 290.62 472.821 289.7C472.821 289.108 473.062 288.601 473.545 288.18C474.028 287.76 474.644 287.549 475.395 287.549C475.909 287.549 476.392 287.656 476.846 287.87C477.299 288.084 477.683 288.391 477.998 288.79H478Z" fill="white" />
+                              <path d="M484.551 288.79L483.322 289.955C482.823 289.486 482.369 289.252 481.962 289.252C481.739 289.252 481.565 289.297 481.439 289.387C481.313 289.476 481.25 289.588 481.25 289.721C481.25 289.822 481.29 289.915 481.37 290C481.45 290.085 481.647 290.201 481.962 290.348L482.689 290.693C483.454 291.052 483.981 291.417 484.266 291.789C484.553 292.162 484.695 292.599 484.695 293.099C484.695 293.765 484.437 294.322 483.921 294.767C483.404 295.213 482.713 295.436 481.845 295.436C480.691 295.436 479.77 295.009 479.082 294.154L480.303 292.892C480.536 293.149 480.809 293.357 481.121 293.516C481.434 293.675 481.711 293.754 481.954 293.754C482.216 293.754 482.427 293.694 482.586 293.575C482.746 293.456 482.826 293.317 482.826 293.161C482.826 292.872 482.538 292.589 481.961 292.313L481.292 291.996C480.012 291.385 479.372 290.62 479.372 289.7C479.372 289.108 479.613 288.601 480.096 288.18C480.578 287.76 481.195 287.549 481.946 287.549C482.46 287.549 482.943 287.656 483.396 287.87C483.85 288.084 484.234 288.391 484.549 288.79H484.551Z" fill="white" />
+                              <path d="M494.185 292.037H487.808C487.9 292.571 488.146 292.995 488.546 293.309C488.946 293.624 489.456 293.781 490.077 293.781C490.818 293.781 491.456 293.536 491.989 293.043L493.661 293.788C493.244 294.349 492.745 294.764 492.163 295.033C491.582 295.302 490.891 295.436 490.091 295.436C488.851 295.436 487.84 295.065 487.059 294.323C486.279 293.581 485.889 292.651 485.889 291.534C485.889 290.418 486.277 289.44 487.055 288.683C487.834 287.927 488.809 287.549 489.982 287.549C491.227 287.549 492.241 287.927 493.021 288.683C493.801 289.44 494.192 290.438 494.192 291.679L494.185 292.037ZM492.2 290.555C492.069 290.138 491.811 289.797 491.425 289.535C491.038 289.273 490.591 289.142 490.081 289.142C489.527 289.142 489.042 289.289 488.624 289.583C488.362 289.767 488.119 290.091 487.896 290.555H492.201L492.2 290.555Z" fill="white" />
+                              <path d="M496.031 284.98H498.016V287.744H499.194V289.365H498.016V295.245H496.031V289.365H495.014V287.744H496.031V284.98Z" fill="white" />
+                              <path d="M500.481 285.104H502.893C504.447 285.104 505.602 285.287 506.358 285.652C507.113 286.017 507.736 286.611 508.225 287.434C508.714 288.257 508.958 289.217 508.958 290.316C508.958 291.098 508.821 291.816 508.548 292.47C508.274 293.125 507.896 293.669 507.414 294.101C506.932 294.533 506.41 294.831 505.849 294.997C505.287 295.162 504.314 295.245 502.929 295.245H500.48V285.104L500.481 285.104ZM502.502 286.966V293.364H503.447C504.378 293.364 505.053 293.263 505.472 293.06C505.891 292.858 506.234 292.518 506.501 292.039C506.767 291.561 506.901 290.972 506.901 290.273C506.901 289.196 506.583 288.361 505.948 287.768C505.377 287.234 504.458 286.967 503.193 286.967H502.502V286.966Z" fill="white" />
+                              <path d="M514.163 285.104H516.228L520.341 295.245H518.225L517.389 293.156H513.025L512.155 295.245H510.039L514.163 285.104ZM515.208 287.793L513.773 291.274H516.635L515.208 287.793Z" fill="white" />
+                              <path d="M526.963 284.848C528.476 284.848 529.777 285.367 530.866 286.406C531.955 287.445 532.5 288.711 532.5 290.205C532.5 291.699 531.963 292.937 530.888 293.962C529.814 294.987 528.511 295.5 526.978 295.5C525.445 295.5 524.039 294.973 522.976 293.921C521.914 292.869 521.383 291.619 521.383 290.171C521.383 289.201 521.63 288.31 522.125 287.496C522.62 286.682 523.3 286.038 524.166 285.562C525.032 285.086 525.964 284.849 526.963 284.849V284.848ZM526.942 286.737C525.952 286.737 525.12 287.063 524.445 287.716C523.771 288.368 523.434 289.198 523.434 290.204C523.434 291.326 523.858 292.213 524.708 292.865C525.367 293.375 526.125 293.63 526.978 293.63C527.944 293.63 528.766 293.299 529.445 292.637C530.125 291.975 530.464 291.16 530.464 290.19C530.464 289.22 530.122 288.407 529.438 287.739C528.754 287.07 527.922 286.736 526.942 286.736V286.737Z" fill="white" />
+                              <path d="M489.118 271.175C489.271 271.333 489.343 271.535 489.334 271.734C489.325 271.933 489.237 272.128 489.07 272.274C488.738 272.564 488.219 272.544 487.912 272.229C487.759 272.071 487.687 271.869 487.696 271.67C487.705 271.471 487.793 271.276 487.96 271.131C488.292 270.84 488.811 270.86 489.118 271.175Z" fill="white" />
+                              <path d="M500.611 266.262C500.609 266.282 500.606 266.303 500.605 266.322C500.598 266.497 500.633 266.673 500.711 266.836L498.175 269.051L495.639 271.267C495.456 271.169 495.25 271.122 495.044 271.125L492.311 263.564C492.426 263.505 492.536 263.434 492.635 263.348C492.734 263.261 492.818 263.163 492.889 263.059L500.611 266.262H500.611Z" fill="white" />
+                              <path d="M489.998 272.17L493.899 272.51C493.944 272.7 494.04 272.876 494.183 273.023C494.333 273.178 494.519 273.282 494.717 273.338L494.799 276.298L494.834 277.584C494.72 277.627 494.612 277.686 494.512 277.763L489.631 272.737C489.799 272.574 489.924 272.381 489.998 272.169V272.17Z" fill="white" />
+                              <path d="M491.512 263.741C491.537 263.743 491.562 263.741 491.587 263.741L494.34 271.355C494.31 271.378 494.28 271.4 494.252 271.426C494.127 271.534 494.032 271.664 493.966 271.807L490.058 271.467C490.01 271.181 489.876 270.916 489.665 270.698C489.464 270.491 489.209 270.348 488.93 270.275L491.191 263.698C491.295 263.722 491.402 263.738 491.512 263.743V263.741Z" fill="white" />
+                              <path d="M496.242 272.376C496.264 272.177 496.232 271.973 496.143 271.788L501.215 267.358C501.403 267.457 501.614 267.504 501.825 267.5L504.76 275.31C504.651 275.367 504.547 275.435 504.453 275.517C504.359 275.599 504.279 275.692 504.21 275.79L496.242 272.376H496.242Z" fill="white" />
+                              <path d="M500.443 261.282C500.675 261.521 500.977 261.676 501.308 261.734L501.311 261.861L501.396 265.308C501.248 265.357 501.109 265.435 500.987 265.542C500.958 265.567 500.931 265.593 500.906 265.62L498.259 264.522L493.129 262.393C493.131 262.369 493.135 262.346 493.136 262.322C493.14 262.221 493.134 262.122 493.117 262.025L500.047 260.506C500.094 260.795 500.229 261.064 500.442 261.283L500.443 261.282Z" fill="white" />
+                              <path d="M507.326 266.178C507.181 266.305 507.065 266.454 506.982 266.616L502.961 266.15C502.921 265.953 502.825 265.763 502.67 265.604C502.521 265.45 502.336 265.346 502.139 265.29L502.052 261.738L502.051 261.69C502.271 261.627 502.476 261.517 502.651 261.365C502.651 261.365 502.652 261.363 502.653 261.363L507.328 266.176C507.328 266.176 507.327 266.177 507.326 266.177L507.326 266.178Z" fill="white" />
+                              <path d="M505.575 275.13C505.543 275.129 505.511 275.13 505.479 275.131L502.523 267.268C502.55 267.248 502.576 267.228 502.601 267.206C502.718 267.104 502.808 266.984 502.871 266.855L506.823 267.314C506.833 267.673 506.976 268.012 507.235 268.278C507.429 268.478 507.672 268.619 507.94 268.694L505.866 275.169C505.771 275.148 505.673 275.135 505.574 275.131L505.575 275.13Z" fill="white" />
+                              <path d="M496.236 277.879C496.053 277.691 495.82 277.571 495.574 277.521L495.459 273.318C495.605 273.269 495.744 273.191 495.865 273.085C495.89 273.063 495.913 273.04 495.936 273.017L503.957 276.455C503.954 276.485 503.95 276.515 503.949 276.545C503.945 276.643 503.951 276.74 503.966 276.834L496.533 278.401C496.483 278.208 496.382 278.03 496.236 277.879V277.879Z" fill="white" />
+                              <path d="M492.395 262.291C492.386 262.49 492.297 262.685 492.131 262.831C491.798 263.122 491.28 263.101 490.973 262.786C490.82 262.628 490.748 262.426 490.757 262.227C490.765 262.028 490.854 261.833 491.02 261.688C491.353 261.397 491.871 261.417 492.178 261.732C492.331 261.89 492.403 262.092 492.395 262.291Z" fill="white" />
+                              <path d="M502.149 260.849C501.816 261.14 501.297 261.12 500.99 260.804C500.837 260.647 500.765 260.445 500.774 260.246C500.783 260.047 500.871 259.851 501.038 259.706C501.371 259.415 501.889 259.435 502.196 259.751C502.349 259.909 502.421 260.111 502.412 260.31C502.404 260.508 502.315 260.704 502.149 260.849Z" fill="white" />
+                              <path d="M507.781 267.793C507.628 267.635 507.556 267.433 507.565 267.234C507.574 267.035 507.662 266.84 507.829 266.694C508.162 266.404 508.68 266.424 508.987 266.739C509.14 266.897 509.212 267.099 509.203 267.298C509.195 267.497 509.106 267.692 508.94 267.837C508.607 268.128 508.088 268.108 507.781 267.793Z" fill="white" />
+                              <path d="M504.692 276.574C504.701 276.376 504.789 276.18 504.956 276.035C505.288 275.744 505.807 275.764 506.114 276.08C506.267 276.237 506.339 276.439 506.33 276.638C506.322 276.837 506.233 277.033 506.067 277.178C505.734 277.469 505.215 277.449 504.908 277.133C504.755 276.975 504.683 276.773 504.692 276.574Z" fill="white" />
+                              <path d="M494.751 278.119C495.083 277.828 495.602 277.848 495.909 278.164C496.062 278.321 496.134 278.523 496.125 278.722C496.116 278.921 496.028 279.117 495.861 279.262C495.529 279.553 495.01 279.533 494.703 279.217C494.55 279.059 494.478 278.857 494.487 278.658C494.496 278.46 494.584 278.264 494.751 278.119Z" fill="white" />
+                            </g>
+                            <rect class="blockHigh" x="235" y="105" width="120" height="80" rx="12" transform="rotate(180 235 105)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="127.779" y="48.615">Digital Assets </tspan>
+                              <tspan x="128.548" y="67.615">&#38; Virtual Real </tspan>
+                              <tspan x="152.715" y="84.615">Estate</tspan>
+                            </text>
+                            <rect class="blockHigh" x="402" y="105" width="126" height="80" rx="12" transform="rotate(180 402 105)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="300.268" y="54.615">Intellectual </tspan>
+                              <tspan x="306.553" y="69.615">Property &#x2028;</tspan>
+                              <tspan x="304.963" y="84.615">&#38; Patents</tspan>
+                            </text>
+                            <rect class="blockHigh" x="563" y="105" width="120" height="80" rx="12" transform="rotate(180 563 105)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="452.758" y="47.115">Environmental </tspan>
+                              <tspan x="497.4" y="62.115">&#38; </tspan>
+                              <tspan x="455.742" y="77.115">Sustainability </tspan>
+                              <tspan x="474.167" y="92.115">Projects</tspan>
+                            </text>
+                            <rect class="blockHigh" x="724" y="105" width="120" height="90" rx="12" transform="rotate(180 724 105)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="623.88" y="49.615">Real Estate &#x2028;</tspan>
+                              <tspan x="639.522" y="69.615">&#38; Land </tspan>
+                              <tspan x="626.081" y="89.615">Ownership</tspan>
+                            </text>
+                            <rect class="blockHigh" x="898" y="105" width="120" height="80" rx="12" transform="rotate(180 898 105)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300"   letter-spacing="-0.02em">
+                              <tspan x="797.349" y="55.615">Businesses &#x2028;</tspan>
+                              <tspan x="800.173" y="75.615">&#38; Startups</tspan>
+                            </text>
+                            <rect class="blockHigh" x="396" y="218" width="120" height="80" rx="12" transform="rotate(180 396 218)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="288.863" y="167.615">Commodities </tspan>
+                              <tspan x="303.263" y="182.615">&#38; Natural </tspan>
+                              <tspan x="299.612" y="197.615">Resources</tspan>
+                            </text>
+                            <rect class="blockHigh" x="559" y="216" width="120" height="80" rx="12" transform="rotate(180 559 216)" fill="#020515" />
+                            <text fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="468.691" y="165.615">Sports &#38; </tspan>
+                              <tspan x="448.425" y="180.615">Entertainment</tspan>
+                            </text>
+                            <rect class="blockHigh" x="726" y="218" width="120" height="80" rx="12" transform="rotate(180 726 218)" fill="#020515" />
+                            <text  fill="white" xml:space="preserve" style="white-space: pre" font-family="DM Sans" font-size="15" font-weight="300" letter-spacing="-0.02em">
+                              <tspan x="653.814" y="158.115">Art, </tspan>
+                              <tspan x="621.978" y="178.115">Collectibles, &#x2028;</tspan>
+                              <tspan x="614.024" y="198.115">&#38; Luxury Items</tspan>
+                            </text>
+                            <defs>
+                              <filter id="filter0_f_249_222" x="379" y="383" width="15" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="1.5" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                <feFuncG type="linear" slope="1.5" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                <feFuncB type="linear" slope="1.5" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+            </feComponentTransfer>
+                              </filter>
+                              <filter id="filter1_f_249_222" x="604" y="384" width="15" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter2_f_249_222" x="805" y="386" width="15" height="14" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter3_f_249_222" x="185" y="383" width="15" height="15" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter4_f_249_222" x="432" y="247" width="15" height="12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter5_f_249_222" x="436" y="238" width="15" height="13" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter6_f_249_222" x="462" y="236" width="15" height="12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter7_f_249_222" x="497" y="233" width="15" height="13" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter8_f_249_222" x="523" y="232" width="15" height="12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter9_f_249_222" x="547" y="237" width="15" height="12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter10_f_249_222" x="558" y="237" width="15" height="12" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+            <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+            <feComponentTransfer>
+                <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+            </feComponentTransfer>
+                              </filter>
+                              <filter id="filter11_f_249_222" x="546" y="266" width="15" height="13" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                                <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_249_222" />
+                                <feComponentTransfer>
+                                    <feFuncR type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału czerwonego -->
+                                    <feFuncG type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału zielonego -->
+                                    <feFuncB type="linear" slope="2" /> <!-- Zwiększa jasność dla kanału niebieskiego -->
+                                </feComponentTransfer>
+                              </filter>
+                              <filter id="filter12_di_249_222" x="343" y="143" width="308" height="269" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feMorphology radius="4" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_249_222" />
+                                <feOffset />
+                                <feGaussianBlur stdDeviation="50">
+                                    <animate attributeName="stdDeviation" values="50;30;50" dur="2s" repeatCount="indefinite"/>
+                                </feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0.922301 0 0 0 0 0.934648 0 0 0 0 0.985156 0 0 0 1 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_249_222" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_249_222" result="shape" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset dy="4">
+                                    <animate attributeName="dy" values="4;2;4" dur="2s" repeatCount="indefinite"/>
+                                </feOffset>
+                                <feGaussianBlur stdDeviation="2">
+                                    <animate attributeName="stdDeviation" values="2;1;2" dur="2s" repeatCount="indefinite"/>
+                                </feGaussianBlur>
+                                <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 .25" 
+                                                                       
+                                                                        />
+                                <feBlend mode="normal" in2="shape" result="effect2_innerShadow_249_222"/>
+                            </filter>
+                              <linearGradient id="paint0_linear_249_222" x1="547" y1="277.5" x2="447" y2="277.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6BAFFF" />
+                                <stop offset="1" stop-color="#023E86" />
+                              </linearGradient>
+                              <linearGradient id="paint1_linear_249_222" x1="547" y1="277.5" x2="447" y2="277.5" gradientUnits="userSpaceOnUse">
+                                <stop stop-color="#6BAFFF" />
+                                <stop offset="1" stop-color="#023E86" />
+                              </linearGradient>
+                            </defs>
+                          </svg>
+                        <!-- prettier-ignore -->
+                    </article>
+                    <article class="main__hero__FInfo">
+                        <h3 class="main__hero__FInfo__h3">Trusted by</h3>
+
+                        <div class="main__hero__FInfo__all">
+                            <img
+                                src="/brands_icon/Brands1.svg"
+                                alt=""
+                                class="main__hero__FInfo__all__brands"
+                            />
+
+                            <img
+                                src="/brands_icon/Brands2.svg"
+                                alt=""
+                                class="main__hero__FInfo__all__brands"
+                            />
+
+                            <img
+                                src="/brands_icon/Brands3.svg"
+                                alt=""
+                                class="main__hero__FInfo__all__brands"
+                            />
+
+                            <img
+                                src="/brands_icon/Brands4.svg"
+                                alt=""
+                                class="main__hero__FInfo__all__brands"
+                            />
+                        </div>
+                    </article>
+                </section>
+                <section class="main__assetTypes">
+                    <article class="main__assetTypes__SAsset">
+                        <h2
+                            class="main__assetTypes__SAsset__h2"
+                            id="assettypes"
+                        >
+                            Asset Types
+                        </h2>
+                        <div class="main__assetTypes__SAsset__wrapper">
+                            <img
+                                class="main__assetTypes__SAsset__wrapper__gradient-img"
+                                src="/glow_svg/blue_gradient.svg"
+                                alt=""
+                            />
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/realEstate_icon.svg"
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgI"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Real Estate and Land Ownership
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Tokenize physical properties, allowing for
+                                    fractional ownership and easier transfer of
+                                    real estate assets.
+                                </p>
+                            </div>
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/art_icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgII"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Art, Collectibles, and Luxury Items
+                                    </h4>
+                                </div>
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Make high-value assets like art, rare
+                                    collectibles, and luxury goods accessible
+                                    through tokenization.
+                                </p>
+                            </div>
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/buisnesses_icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgIII"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Businesses and Startups
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Tokenize equity in businesses and startups,
+                                    enabling fractional ownership and easier
+                                    fundraising for companies.
+                                </p>
+                            </div>
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/intellectual_icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgIV"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Intellectual Property and Patents
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    We are designing an intuitive platform that
+                                    simplifies blockchain technology, providing
+                                    a seamless experience from tokenisation to
+                                    trading.
+                                </p>
+                            </div>
+                            <div
+                                class="main__assetTypes__SAsset__wrapper__div imgV"
+                            >
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/commodities_icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Commodities & Natural Resources
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Fractionalize investment in physical
+                                    commodities like gold, oil, or agricultural
+                                    products through tokenization.
+                                </p>
+                            </div>
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/digitalAssets_icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgVI"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Digital Assets & Virtual Real Estate
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Invest in digital assets such as virtual
+                                    land, domain names, or digital art through
+                                    tokenized shares.
+                                </p>
+                            </div>
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/sport_Icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgVII"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Sports & Entertainmen
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Tokenize shares in sports contracts or
+                                    entertainment projects, giving fans and
+                                    investors a unique way to participate.
+                                </p>
+                            </div>
+                            <div class="main__assetTypes__SAsset__wrapper__div">
+                                <div
+                                    class="main__assetTypes__SAsset__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/env_icon.svg"
+                                        alt=""
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__img imgVII"
+                                    />
+                                    <h4
+                                        class="main__assetTypes__SAsset__wrapper__div__inside__h4"
+                                    >
+                                        Environmental & Sustainability Projects
+                                    </h4>
+                                </div>
+
+                                <p
+                                    class="main__assetTypes__SAsset__wrapper__div__p"
+                                >
+                                    Tokenize investments in eco-friendly
+                                    projects like renewable energy and
+                                    reforestation efforts.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="main__assetDao">
+                    <h2 class="main__assetDao__h2">Asset DAO</h2>
+                    <img
+                        class="main__assetDao__imgGradientII"
+                        src="/glow_svg/blue_gradient_II.svg"
+                        alt=""
+                    />
+                    <article class="main__assetDao__TAsset">
+                        <div class="main__assetDao__TAsset__divOne">
+                            <img
+                                class="main__assetDao__TAsset__divOne__img"
+                                src="/mockup/laptop.svg"
+                                alt=""
+                            />
+                        </div>
+                        <div class="main__assetDao__TAsset__divTwo">
+                            <h3 class="main__assetDao__TAsset__divTwo__h3">
+                                Unlock new investment opportunities with our
+                                secure asset tokenization platform
+                            </h3>
+                            <p class="main__assetDao__TAsset__divTwo__pOne">
+                                Our platform converts assets into digital
+                                tokens, enabling fractional ownership and
+                                trading in a secure, compliant marketplace. This
+                                boosts liquidity and makes investing accessible
+                                to everyone, globally.
+                            </p>
+                            <p class="main__assetDao__TAsset__divTwo__pTwo"></p>
+                            <button class="main__assetDao__TAsset__divTwo__btn">
+                                GO TO APPLICATION
+                                <img
+                                    class="main__assetDao__TAsset__divTwo__btn__img"
+                                    src="/mockup/btn_ele.svg"
+                                    alt=""
+                                />
+                            </button>
+                        </div>
+                    </article>
+                </section>
+                <section class="main__product">
+                    <article class="main__product__features">
+                        <h2 id="features" class="main__product__features__h2">
+                            Product Features
+                        </h2>
+                        <div class="main__product__features__wrapper">
+                            <div class="main__product__features__wrapper__div">
+                                <div
+                                    class="main__product__features__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/icon_1.svg"
+                                        alt=""
+                                        class="main__product__features__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__product__features__wrapper__div__inside__h4"
+                                    >
+                                        Asset Tokenisation
+                                    </h4>
+                                </div>
+
+                                <p class="main__product__features__div__p pPp">
+                                    We enable the conversion of physical and
+                                    intellectual assets into digital tokens,
+                                    representing fractional shares of ownership
+                                    or investment.
+                                </p>
+                            </div>
+                            <div class="main__product__features__wrapper__div">
+                                <div
+                                    class="main__product__features__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/icon_1.svg"
+                                        alt=""
+                                        class="main__product__features__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__product__features__wrapper__div__inside__h4"
+                                    >
+                                        Secure & Compliant Trading Platform
+                                    </h4>
+                                </div>
+
+                                <p class="main__product__features__div__p pPp">
+                                    We offer an internationally compliant
+                                    marketplace, ensuring safe trading of
+                                    tokenised assets.
+                                </p>
+                            </div>
+                            <div class="main__product__features__wrapper__div">
+                                <div
+                                    class="main__product__features__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/icon_1.svg"
+                                        alt=""
+                                        class="main__product__features__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__product__features__wrapper__div__inside__h4"
+                                    >
+                                        Accessibility for Users
+                                    </h4>
+                                </div>
+
+                                <p class="main__product__features__div__p pPp">
+                                    We are designing an intuitive platform that
+                                    simplifies blockchain technology, providing
+                                    a seamless experience from tokenisation to
+                                    trading.
+                                </p>
+                            </div>
+                            <div class="main__product__features__wrapper__div">
+                                <div
+                                    class="main__product__features__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/icon_1.svg"
+                                        alt=""
+                                        class="main__product__features__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__product__features__wrapper__div__inside__h4"
+                                    >
+                                        Liquidity of Assets
+                                    </h4>
+                                </div>
+
+                                <p class="main__product__features__div__p pPp">
+                                    We are increasing the liquidity of
+                                    traditionally illiquid assets such as real
+                                    estate and works of art, enabling fractional
+                                    ownership.
+                                </p>
+                            </div>
+                            <div class="main__product__features__wrapper__div">
+                                <div
+                                    class="main__product__features__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/icon_1.svg"
+                                        alt=""
+                                        class="main__product__features__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__product__features__wrapper__div__inside__h4"
+                                    >
+                                        Community building
+                                    </h4>
+                                </div>
+
+                                <p class="main__product__features__div__p pPp">
+                                    We are creating an engaged community of
+                                    investors, offering tools for communication
+                                    and collaboration, which fosters the
+                                    exchange of knowledge and experience.
+                                </p>
+                            </div>
+                            <div class="main__product__features__wrapper__div">
+                                <div
+                                    class="main__product__features__wrapper__div__inside"
+                                >
+                                    <img
+                                        src="/assets_icon/icon_1.svg"
+                                        alt=""
+                                        class="main__product__features__wrapper__div__inside__img"
+                                    />
+                                    <h4
+                                        class="main__product__features__wrapper__div__inside__h4"
+                                    >
+                                        Innovation & automation
+                                    </h4>
+                                </div>
+
+                                <p class="main__product__features__div__p pPp">
+                                    We implement AI and automation for greater
+                                    efficiency and innovation, streamlining
+                                    investment processes and asset management.
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <section class="main__tokeProcess">
+                    <h2 id="process" class="main__tokeProcess__h2">
+                        Tokenization Process
+                    </h2>
+                    <article class="main__tokeProcess__art">
+                        <img
+                            src="/mockup/toke_process.svg"
+                            class="main__tokeProcess__art__svg"
+                        />
+                    </article>
+                </section>
+
+                <section class="main__others">
+                    <article class="main__others__art">
+                        <h2 class="main__others__art__h2">
+                            What other say about Asset DAO
+                        </h2>
+                        <h3 class="main__others__art__h3">
+                            Hear firsthand how our solutions have boosted online
+                            success for users like you.
+                        </h3>
+                        <div class="main__others__art__div">
+                            <img
+                                class="main__others__art__div__img"
+                                src="/avatars/Avatar@1.png"
+                                alt=""
+                            />
+                            <div class="main__others__art__div__inside">
+                                <h4 class="main__others__art__div__inside__h4">
+                                    ”This product has completely transformed how
+                                    I manage my projects ”
+                                </h4>
+                                <h5 class="main__others__art__div__inside__h5">
+                                    Tom Close
+                                </h5>
+                                <p class="main__others__art__div__inside__p">
+                                    Digital MarketingSpecialist @WizardCampIT
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__others__art__div">
+                            <img
+                                class="main__others__art__div__img"
+                                src="/avatars/Avatar@2.png"
+                                alt=""
+                            />
+                            <div class="main__others__art__div__inside">
+                                <h4 class="main__others__art__div__inside__h4">
+                                    “A fantastic way to invest in fractional
+                                    assets, with full transparency and control
+                                    through the DAO system!"
+                                </h4>
+                                <h5 class="main__others__art__div__inside__h5">
+                                    Nikolay Brunt
+                                </h5>
+                                <p class="main__others__art__div__inside__p">
+                                    CEO @HAL
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main__others__art__div">
+                            <img
+                                class="main__others__art__div__img"
+                                src="/avatars/Avatar@3.png"
+                                alt=""
+                            />
+                            <div class="main__others__art__div__inside">
+                                <h4 class="main__others__art__div__inside__h4">
+                                    “Great platform for tokenization! Simple,
+                                    accessible, and the DAO model adds real
+                                    decision-making power for users."
+                                </h4>
+                                <h5 class="main__others__art__div__inside__h5">
+                                    Mary Lukas
+                                </h5>
+                                <p class="main__others__art__div__inside__p">
+                                    Sales Manager @TokenBusiness
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+                <div class="longGradient">
+                    <img
+                        class="imgLongGradient"
+                        src="/glow_svg/blue_gradientIII.svg"
+                        alt=""
+                    />
+                    <section class="main__faq">
+                        <h2 id="faq" class="main__faq__h2">
+                            Frequently asked questions
+                        </h2>
+                        <article class="main__faq__art">
+                            <p class="main__faq__art__p">
+                                Who can invest in tokenized assets on this
+                                platform?
+                                <span class="o">&or;</span>
+                            </p>
+
+                            <p class="main__faq__art__p">
+                                Is Asset DAO Use AI technology?
+                                <span class="s">&or;</span>
+                            </p>
+
+                            <p class="main__faq__art__p">
+                                What types of assets can be tokenized on your
+                                platform? <span class="t">&or;</span>
+                            </p>
+
+                            <p class="main__faq__art__p">
+                                How do I get started with tokenization or
+                                investing in tokenized assets?
+                                <span class="f">&or;</span>
+                            </p>
+                        </article>
+                    </section>
+                    <section class="main__form">
+                        <h2 id="contact" class="main__form__h2">Contact</h2>
+                        <p class="main__form__p">
+                            Have questions about asset tokenization or need
+                            assistance with our platform?
+                        </p>
+                        <div class="main__form__container">
+                            <article class="main__form__container__art">
+                                <div
+                                    class="main__form__container__art__wrapper"
+                                >
+                                    <h3
+                                        class="main__form__container__art__wrapper__h3"
+                                    >
+                                        Let’s connect
+                                    </h3>
+
+                                    <div
+                                        class="main__form__container__art__wrapper__div"
+                                    >
+                                        <input
+                                            class="main__form__container__art__wrapper__div__inpFN"
+                                            type="text"
+                                            placeholder="First Name"
+                                        />
+                                        <input
+                                            class="main__form__container__art__wrapper__div__inpLN"
+                                            type="text"
+                                            placeholder="Last Name"
+                                        />
+                                    </div>
+                                    <input
+                                        class="main__form__container__art__wrapper__email"
+                                        type="text"
+                                        placeholder="Email"
+                                    />
+
+                                    <input
+                                        class="main__form__container__art__wrapper__phone"
+                                        type="text"
+                                        placeholder="Phone number"
+                                    />
+                                    <input
+                                        class="main__form__container__art__wrapper__message"
+                                        type="text"
+                                        placeholder="Message"
+                                    />
+                                    <button
+                                        class="main__form__container__art__wrapper__btn"
+                                    >
+                                        Send
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="main__form__container__artS">
+                                <p class="main__form__container__artS__p">
+                                    Fill out the form below and our team will
+                                    get back to you shortly. Whether you're new
+                                    to NFTs or a seasoned investor, we're here
+                                    to help you every step of the way.
+                                </p>
+                                <div class="main__form__container__artS__div">
+                                    <div
+                                        class="main__form__container__artS__div__inside"
+                                    >
+                                        <img
+                                            class="main__form__container__artS__div__inside__imgF"
+                                            src="/contact_icon/email.png"
+                                            alt=""
+                                        />
+                                        <p
+                                            class="main__form__container__artS__div__inside__p"
+                                        >
+                                            email
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="main__form__container__artS__div__insideS"
+                                    >
+                                        <img
+                                            class="main__form__container__artS__div__insideS__imgS"
+                                            src="/contact_icon/location.png"
+                                            alt=""
+                                        />
+                                        <p
+                                            class="main__form__container__artS__div__insideS__p"
+                                        >
+                                            123 Street 456 House
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="main__community">
+                        <article class="main__community__art">
+                            <h2 class="main__community__art__h2">
+                                Join the Asset DAO community
+                            </h2>
+                            <div class="main__community__art__div">
+                                <img
+                                    class="main__community__art__div__img"
+                                    src="/social_icon/linkedin.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="main__community__art__div__img"
+                                    src="/social_icon/linkedin.png"
+                                    alt=""
+                                />
+                                <img
+                                    class="main__community__art__div__img"
+                                    src="/social_icon/linkedin.png"
+                                    alt=""
+                                />
+                            </div>
+                        </article>
+                    </section>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <section class="footer__entire">
+                    <div class="footer__entire__wrapper">
+                        <article class="footer__entire__wrapper__art artF">
+                            <h3 class="footer__entire__wrapper__art__h3">
+                                Company
+                            </h3>
+                            <p class="footer__entire__wrapper__art__p pAll">
+                                About
+                            </p>
+                            <p class="footer__entire__wrapper__art__p">
+                                Product
+                            </p>
+                            <p class="footer__entire__wrapper__art__p">
+                                Marketplace
+                            </p>
+                            <p class="footer__entire__wrapper__art__p">
+                                Profile
+                            </p>
+                        </article>
+                        <article class="footer__entire__wrapper__art artS">
+                            <h3 class="footer__entire__wrapper__art__h3">
+                                Support
+                            </h3>
+                            <p class="footer__entire__wrapper__art__p pAll">
+                                Help & FAQ
+                            </p>
+                            <p class="footer__entire__wrapper__art__p">
+                                Privacy Policy
+                            </p>
+                            <p class="footer__entire__wrapper__art__p">
+                                Terms & Conditions
+                            </p>
+                            <p class="footer__entire__wrapper__art__p">
+                                License Agreement
+                            </p>
+                        </article>
+                        <article class="footer__entire__wrapper__art artT">
+                            <h3 class="footer__entire__wrapper__art__h3">
+                                Contact
+                            </h3>
+                            <p
+                                class="footer__entire__wrapper__art__p iconEmail pAll"
+                            >
+                                e-mail
+                            </p>
+
+                            <p
+                                class="footer__entire__wrapper__art__p iconLocation"
+                            >
+                                location
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </footer>
+        </div>
+        <script type="module" src="main.js"></script>
+    </body>
+</html>

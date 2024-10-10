@@ -1,0 +1,71 @@
+
+    .footer{
+        color: white;
+        margin-top: 3.5%;
+        position: relative;
+     
+        
+        
+            &__entire{
+             
+        
+                &__wrapper{
+                display: flex;
+                align-items: baseline;
+                justify-content: center;
+               
+                gap: 5%;
+               
+        
+        
+                    &__art{
+        
+        
+                        &__h3{
+                  
+                        }
+        
+        
+                        &__p:first-of-type{
+                        margin-top: 20px;
+                        ////align-self: center;
+                        }
+        
+                        
+                        &__p{
+                        margin-top: 10px;   
+                        font-size: 13.5px;
+                      
+                        }
+        
+        
+                        .iconEmail::before{
+                          content: url(/contact_icon/email.png);
+                          
+                        }
+        
+                        .iconNumber::before{
+                            content: url(/contact_icon/number.png);
+                        }
+        
+                        .iconLocation::before{
+                            content: url(/contact_icon/location.png);
+                        }
+                    }
+                }
+            }
+        }
+        
+        .footer::before {
+            content: ""; /* Wymagane do wyświetlenia pseudo-elementu */
+            display: block; /* Umożliwia zastosowanie szerokości i wysokości */
+            border-top: 1px solid rgba(109, 109, 109, 0.396); /* Górna krawędź */
+            margin-top: 10px; /* Odstęp od treści w stopce */
+           
+            width: 80%;
+            margin: auto;
+            margin-bottom: 2.5%;
+        }
+
+
+

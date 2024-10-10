@@ -1,0 +1,152 @@
+
+
+.main{
+
+
+    &__faq{
+        color: white;
+      margin: auto;
+      margin-top: 15%;
+     
+     
+
+      &__h2{
+        display: block;
+        margin: 0 auto;
+        
+        
+        margin-left: 30%;
+        margin-right: 10%;
+   
+        font-size: 40px;
+        
+        
+    }
+       &__art{
+       
+        width: 50%;
+        min-width: 400px;
+     
+        margin-left: 15%;
+        margin-top: 15%;
+        margin-right: 15%;
+        margin: auto;
+      
+  
+
+        &__p{
+            
+            border: 0.8px solid rgba(192, 192, 192, 0.664);
+            border-radius: 8px;
+            padding: 2%;
+            padding-right: 15%;
+            margin-top: 6.5%;
+            
+            margin-left: 5%;
+           
+            
+            width: 85%;
+            position: relative;
+            
+            font-weight: 500;
+            
+
+           
+            @include mq(large){
+                padding: 5% 15% 5% 5%;
+            }
+          
+            
+           
+  
+        
+        }
+
+        .o{
+            /// dodać wysuwanie się tekstu 
+            position: absolute;
+            left: 92.5%;
+            font-weight: 700;
+
+          
+
+            &::after{
+                
+            }
+
+           &:hover::after{
+        
+           }
+
+           @include mq(after-xlarge){
+            top: 30%;
+            left: 90%;
+        }
+
+         
+       
+ 
+
+        }
+    
+        .s{
+          position: absolute;
+          left: 92.5%;
+          font-weight: 700;
+
+            &:hover::after{
+                content: '';
+               }
+
+
+               @include mq(after-xlarge){
+                top: 30%;
+                left: 90%;
+            }
+        }
+
+        .t{
+            position: absolute;
+            left: 92.5%;
+            font-weight: 700;
+
+            &:hover::after{
+                position: absolute; 
+                top: 5%;
+                content: '';
+               }
+
+               @include mq(after-xlarge){
+                top: 30%;
+                left: 90%;
+            }
+               
+        }
+
+        .f{
+            position: absolute;
+            left: 92.5%;
+            font-weight: 700;
+
+            &:hover::after{
+                content: '';
+               }
+
+               @include mq(after-xlarge){
+                top: 30%;
+                left: 90%;
+            }
+        }
+
+        hr{
+            margin-top: 5%;
+            width: 130%;
+            color: white;
+        }
+       }
+       }
+
+
+
+
+}

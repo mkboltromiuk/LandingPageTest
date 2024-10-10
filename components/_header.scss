@@ -1,0 +1,147 @@
+.header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+   
+   @include mq(medium-large){
+    margin-top: 5%;
+   }
+
+    &__btn-waitList {
+        @include btn-def;
+        display: inline-block;
+        position: absolute;
+        align-self: auto;
+        margin-right: 5%;
+        left: 82.5%;
+        top: 10%;
+
+        @include mq(medium-large){
+            left: calc(82.5% - 10vw);
+            transition: left 0.5s ease;
+          }
+       
+        @include mq(medium){
+            left: calc(82.5% - 15vw);
+            transition: left 0.5s ease;
+          }
+       
+
+    @include mq(medium-samll){
+            left: calc(82.5% - 28vw);
+            transition: left 0.5s ease;
+          }
+
+      
+        
+    }
+
+    &__navbar {
+        display: inline-block;
+        align-self: baseline;
+        margin: auto;
+       /// width: 700px;
+        padding: 0.8%;
+        margin-bottom: -2%;
+
+      
+
+        
+        @include glass;
+        border-radius: 20px;
+
+
+
+        .all {
+          margin: 0 4.5%;
+       /// margin-left:3.5%;
+        @include mq(xxlarge){
+            margin: 0 3%;
+        }
+        @include mq(xlarge){
+            margin: 0 2.5%;
+        }
+
+        @include mq(after-xlarge){
+            margin: 0 1.5%;
+        }
+
+        @include mq(large){
+            margin: 0 1%;
+        }
+
+        @include mq(medium-large){
+            margin: 0 0.5%;
+        }
+       
+
+        
+           
+
+            color: white;
+        text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                color: hsl(0deg, 0%, 75%);
+            }
+        }
+
+
+        &__aboutPlatfrom{
+            ///margin-left: 15%;
+            ///background-color: red;
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        position: absolute;
+      width: 10%;
+       height: auto;
+        right: 82.5%;
+        top: 15%;
+
+        @include mq(medium-large){
+            width: 15%; 
+            right: 70.5%;
+            
+            transition: right 0.5s ease;
+        }
+
+        @include mq(medium){
+            top: 5px;
+            transition: top 0.5s ease;
+           width: 100px;
+        }
+
+        @include mq(small){
+          
+        }
+
+
+        
+    }
+
+    &__ctaBtn {
+        display: inline-block;
+        margin-left: 8%;
+    }
+
+    &__navbar {
+
+        
+
+         width: calc(100% - (100% * 0.5));
+
+         @include mq(medium-large){
+            display: none;
+         }
+               
+    }
+}
+
+.header > * {
+    margin-top: 2.5%;
+}
