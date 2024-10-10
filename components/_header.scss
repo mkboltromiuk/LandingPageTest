@@ -54,10 +54,10 @@
 
 
         .all {
-          margin: 0 3.5%;
+          margin: 0 4%;
        /// margin-left:3.5%;
         @include mq(xxlarge){
-            margin: 0 3%;
+            margin: 0 3.5%;
         }
         @include mq(xlarge){
             margin: 0 2.5%;
@@ -133,8 +133,21 @@
 
         
 
-         width: calc(100% - (100% * 0.5));
+         width: calc(100% - (100% * 0.53));
 
+         @include mq(xxxlarge){
+            width: calc(100% - (100% * 0.45));
+         } 
+
+         @include mq (xxlarge){
+            width: calc(100% - (100% * 0.45));
+         } 
+
+
+         
+         @include mq(xxlarge){
+            width: calc(100% - (100% * 0.45));
+         } 
        
 
          @include mq(mid-after-large){
