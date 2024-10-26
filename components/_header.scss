@@ -102,7 +102,7 @@
        height: auto;
         right: 82.5%;
         top: 15%;
-
+         background-color: red;
         @include mq(medium-large){
             width: 15%; 
             right: 70.5%;
