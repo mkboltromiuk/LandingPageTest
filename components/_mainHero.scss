@@ -138,8 +138,11 @@
 
        &__FAnima{
            display: block;
-           ///margin-bottom: 1.5%;
+           margin-bottom: 20%;
            
+
+
+
            @include mq(medium-samll){
             display: none;
           }
@@ -180,7 +183,7 @@
            margin: auto;
            margin-top: 20%;
       
-           
+           display: none;
 
            &__h3{
                text-align: center;
