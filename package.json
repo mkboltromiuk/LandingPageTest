@@ -11,5 +11,8 @@
   "devDependencies": {
     "sass": "^1.79.1",
     "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "dompurify": "^3.1.7"
   }
 }

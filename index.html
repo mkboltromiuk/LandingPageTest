@@ -1007,42 +1007,59 @@
                                     >
                                         Let’s connect
                                     </h3>
-
-                                    <div
-                                        class="main__form__container__art__wrapper__div"
-                                    >
+                                    <form id="contactForm">
+                                        <div
+                                            class="main__form__container__art__wrapper__div"
+                                        >
+                                            <label for="firstname"></label>
+                                            <input
+                                                id="firstname"
+                                                name="firstname"
+                                                class="main__form__container__art__wrapper__div__inpFN"
+                                                type="text"
+                                                placeholder="First Name"
+                                            />
+                                            <label for="lastname"></label>
+                                            <input
+                                                id="lastname"
+                                                name="lastname"
+                                                class="main__form__container__art__wrapper__div__inpLN"
+                                                type="text"
+                                                placeholder="Last Name"
+                                            />
+                                        </div>
+                                        <label for="email"></label>
                                         <input
-                                            class="main__form__container__art__wrapper__div__inpFN"
-                                            type="text"
-                                            placeholder="First Name"
+                                            id="email"
+                                            name="email"
+                                            class="main__form__container__art__wrapper__email"
+                                            type="email"
+                                            placeholder="Email"
                                         />
+                                        <label for="phone"></label>
                                         <input
-                                            class="main__form__container__art__wrapper__div__inpLN"
-                                            type="text"
-                                            placeholder="Last Name"
+                                            id="phone"
+                                            name="phone"
+                                            class="main__form__container__art__wrapper__phone"
+                                            type="number"
+                                            placeholder="Phone number"
                                         />
-                                    </div>
-                                    <input
-                                        class="main__form__container__art__wrapper__email"
-                                        type="text"
-                                        placeholder="Email"
-                                    />
-
-                                    <input
-                                        class="main__form__container__art__wrapper__phone"
-                                        type="text"
-                                        placeholder="Phone number"
-                                    />
-                                    <input
-                                        class="main__form__container__art__wrapper__message"
-                                        type="text"
-                                        placeholder="Message"
-                                    />
-                                    <button
-                                        class="main__form__container__art__wrapper__btn"
-                                    >
-                                        Send
-                                    </button>
+                                        <label for="description"></label>
+                                        <textarea
+                                            id="description"
+                                            name="description"
+                                            class="main__form__container__art__wrapper__message"
+                                            type="text"
+                                            placeholder="Message"
+                                        ></textarea>
+                                        <button
+                                            type="submit"
+                                            class="main__form__container__art__wrapper__btn"
+                                            value="send"
+                                        >
+                                            Send
+                                        </button>
+                                    </form>
                                 </div>
                             </article>
                             <article class="main__form__container__artS">
@@ -1170,5 +1187,6 @@
             </footer>
         </div>
         <script type="module" src="src/js/main.js"></script>
+        <script type="module" src="src/js/formAction.js"></script>
     </body>
 </html>

@@ -70,10 +70,10 @@ table {
 body{
 
     font-family: $regular-font-family;
-   // background-color: #13192d;
- 
-  /// background-color: #1e1e1e;
   background-color: #13192d;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; /* Wygładzenie czcionek */
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .wrapper{
