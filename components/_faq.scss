@@ -57,46 +57,47 @@
             }
           
             
-           
-  
         
         }
+        .rotate{
+            transform: rotate(180deg);
+           transition: transform 0.5s ease-in-out;
+         }
+
+         
 
         .o{
             /// dodać wysuwanie się tekstu 
             position: absolute;
             left: 92.5%;
             font-weight: 700;
+            text-decoration: none;
+          
+           &:hover{
+            cursor: pointer;
+           }
+          
+            
 
           
-
-            &::after{
-                
-            }
-
-           &:hover::after{
-        
-           }
 
            @include mq(after-xlarge){
             top: 30%;
             left: 90%;
-        }
-
-         
-       
- 
+        } 
 
         }
+     
+      
     
         .s{
           position: absolute;
           left: 92.5%;
           font-weight: 700;
 
-            &:hover::after{
-                content: '';
-               }
+          &:hover{
+            cursor: pointer;
+           }
 
 
                @include mq(after-xlarge){
@@ -105,15 +106,15 @@
             }
         }
 
+       
+
         .t{
             position: absolute;
             left: 92.5%;
             font-weight: 700;
 
-            &:hover::after{
-                position: absolute; 
-                top: 5%;
-                content: '';
+            &:hover{
+                cursor: pointer;
                }
 
                @include mq(after-xlarge){
@@ -128,8 +129,8 @@
             left: 92.5%;
             font-weight: 700;
 
-            &:hover::after{
-                content: '';
+            &:hover{
+                cursor: pointer;
                }
 
                @include mq(after-xlarge){
@@ -138,15 +139,34 @@
             }
         }
 
+
+
+
+
         hr{
             margin-top: 5%;
             width: 130%;
             color: white;
         }
        }
+
+
+
+
        }
+}
 
 
+.no-select {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer */
+    user-select: none;         /* Standard */
+}
 
-
+.showTextInfo{
+    display: block;
+    margin-top: 2.5%;
+    color: rgb(187, 187, 187);
+    font-size: 14px;
 }

@@ -4,12 +4,12 @@
 
 
     &__form{
-        margin-top: 12.5%;
+        
         color: white;
   
         &__h2{
           text-align: center;
-          margin-top: 10%;
+          margin-top: 8.5%;
          
   
          
@@ -29,7 +29,10 @@
         &__container{
           display: flex;
           margin-top: 5%;
-          
+          justify-content: center;
+
+
+
           @include mq(large){
             flex-direction: column;
             
@@ -37,18 +40,34 @@
   
   
           &__art{
-            
-             
+             position: relative;
+             left: 2.5%;
               width:480px;
               height: 450px;
-     
-              margin-left: 20%;
-              
+              transform: scale(1.2);
+              ///margin-left: 20%;
+             /// margin: 0 auto;
               border-radius: 30px;
               background-color: black;
 
+
+              @include mq(xxlarge){
+               
+                margin-top: 2.5%;
+              }
+
+              @include mq(xlarge){
+                margin-top: 2.5%;
+              }
+
+              @include mq(mid-after-large){
+                transform: scale(1);
+                margin-top: 2.5%;
+              }
+
               @include mq(large){
                 margin: 0 auto;
+                margin-top: 5%;
               }
 
               @include mq (medium-samll){
@@ -68,7 +87,24 @@
     transition: transform 1.5s ease;
                
               }
-           
+              
+              &__emailDiv{
+                position: absolute;
+                left: 65%;
+                top: 3.5%;
+                display: flex; 
+                align-items: center;
+                gap: 25%;   
+                filter: contrast(5%);
+                &__img{
+                  transform: scale(0.75);
+                }
+
+
+                &__p{
+                  font-size: 16px;
+                }
+              }
             
          
               &__wrapper{
@@ -213,7 +249,7 @@
                   line-height: 125%;
                   word-spacing: 1px;
                   font-size: 16.5px;
-                  
+                  display: none;
                 
                  
                   
@@ -255,10 +291,10 @@
                   &__inside{
                       
                     margin-top: 5%;
-                    display: flex;
-                   
+                    display: none;
+                    gap: 25%;
                    align-items: center;
-                  
+                   
                       &__imgF{
                           display: block;
                      
@@ -283,9 +319,9 @@
   
                  &__insideS{
                     margin-top: 5%;
-                  display: flex;
+                  display: none;
                   align-items: center;
-                
+                 
                 
 
                   &__imgS{
