@@ -28,7 +28,23 @@
                         >Pitch Deck</a
                     >
                 </nav>
-                <button class="header__btn-waitList">Join the waitlist</button>
+                <button class="header__btn-waitList" id="waitlist-btn-switch">
+                    Join the waitlist
+                </button>
+                <form hidden id="waitlist-form">
+                    <label for="waitlist-email"></label>
+                    <input
+                        class="header__waitlist-form__inp"
+                        type="text"
+                        id="waitlist-email"
+                        name="waitlist-email"
+                        required
+                        placeholder="Your Email"
+                    />
+                    <button class="header__waitlist-form__btn" type="submit">
+                        Send
+                    </button>
+                </form>
             </header>
 
             <main class="main">

@@ -7,7 +7,7 @@ const supabase = createClient(
 );
 
 ///// ToDo \\\\\
-///// 1. RLS ||  2. secure env data \\\\\
+///// 1. set right RLS settings ||  2. secure env data \\\\\
 
 const contactForm = document.querySelector('#contactForm');
 
@@ -33,15 +33,18 @@ function handleFormSubmit(event) {
 
 async function sending(sanitizedData) {
     try {
-        const { data, error } = await supabase.from('clients').insert([
-            {
-                email: sanitizedData.email,
-                phonenumber: sanitizedData.phone,
-                firstname: sanitizedData.firstname,
-                lastname: sanitizedData.lastname,
-                message: sanitizedData.description,
-            },
-        ]);
+        const { data, error } = await supabase
+            .from('clients')
+            .insert([
+                {
+                    email: sanitizedData.email,
+                    phonenumber: sanitizedData.phone,
+                    firstname: sanitizedData.firstname,
+                    lastname: sanitizedData.lastname,
+                    message: sanitizedData.description,
+                },
+            ])
+            .select();
 
         if (error) {
             throw error;
@@ -149,3 +152,60 @@ function validateDescription(text) {
 }
 
 contactForm.addEventListener('submit', handleFormSubmit);
+
+const waitListForm = document.querySelector('#waitlist-form');
+const waitListBtn = document.querySelector('#waitlist-btn-switch');
+const waitlist_email = document.querySelector('#waitlist-email');
+
+waitListBtn.addEventListener('click', (event) => {
+    waitListForm.classList.add('header__waitlist-form');
+    waitListBtn.style.display = 'none';
+});
+
+function handleWaitListSub(event) {
+    event.preventDefault();
+
+    const emailData = waitlist_email.value;
+    sendDataWaitList(emailData);
+    waitlist_email.value = '';
+}
+
+function sendDataWaitList(emailData) {
+    const emailDatacopy = emailData.slice(0);
+    let isValid = true;
+
+    if (!validateEmail(emailDatacopy)) {
+        waitlist_email.classList.add('Alertinfo');
+        waitlist_email.placeholder = 'Enter a valid email address';
+        waitlist_email.value = '';
+        isValid = false;
+        setTimeout(() => {
+            waitListForm.classList.remove('header__waitlist-form');
+            waitListBtn.style.display = 'block';
+        }, 60 * 1000);
+    } else {
+        const cleanEmail = DOMPurify.sanitize(emailDatacopy);
+        waitListForm.classList.remove('header__waitlist-form');
+        waitListBtn.style.display = 'block';
+
+        readySendWaitList(cleanEmail);
+    }
+}
+
+async function readySendWaitList(cleanEmail) {
+    try {
+        const { data, error } = await supabase
+            .from('Waitlist')
+            .insert([{ email: cleanEmail }])
+            .select();
+        if (error) {
+            throw error;
+        } else {
+            console.log(data);
+        }
+    } catch (error) {
+        console.error('Wrong or bad request:', error.message);
+    }
+}
+
+waitListForm.addEventListener('submit', handleWaitListSub);
