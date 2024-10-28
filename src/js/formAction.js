@@ -1,4 +1,13 @@
 import DOMPurify from 'dompurify';
+import { createClient } from '@supabase/supabase-js';
+
+const supabase = createClient(
+    'https://nhnupinjrcwjafvnkusy.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5obnVwaW5qcmN3amFmdm5rdXN5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjkwNjY5MDksImV4cCI6MjA0NDY0MjkwOX0.4NVDgYuns4N8Djry3CWhOIsPpFRcGdNfi2f8lbrgAdM'
+);
+
+///// ToDo \\\\\
+///// 1. RLS ||  2. secure env data \\\\\
 
 const contactForm = document.querySelector('#contactForm');
 
@@ -11,7 +20,6 @@ const textarea = document.querySelector('#description');
 function handleFormSubmit(event) {
     event.preventDefault();
 
-    // Tworzenie danych przed sanitizacją
     const data = {
         firstname: firstname.value,
         lastname: lastname.value,
@@ -23,25 +31,41 @@ function handleFormSubmit(event) {
     validation(data);
 }
 
-function sending(sanitizedData) {
-    console.log(sanitizedData); // Zmienione na przekazywanie oczyszczonych danych
+async function sending(sanitizedData) {
+    try {
+        const { data, error } = await supabase.from('clients').insert([
+            {
+                email: sanitizedData.email,
+                phonenumber: sanitizedData.phone,
+                firstname: sanitizedData.firstname,
+                lastname: sanitizedData.lastname,
+                message: sanitizedData.description,
+            },
+        ]);
+
+        if (error) {
+            throw error;
+        } else {
+            console.log(data);
+        }
+    } catch (error) {
+        console.error('Błąd:', error.message);
+    }
 }
 
 function validation(data) {
-    // Resetowanie klas błędów przed nową walidacją
     resetClasses();
 
     let isValid = true;
 
-    // Walidacja
-    if (data.firstname.length < 5) {
+    if (data.firstname.length < 3) {
         firstname.classList.add('Alertinfo');
         firstname.placeholder = 'Enter more than five letters';
         firstname.value = '';
         isValid = false;
     }
 
-    if (data.lastname.length < 5) {
+    if (data.lastname.length < 3) {
         lastname.classList.add('Alertinfo');
         lastname.placeholder = 'Enter more than five letters';
         lastname.value = '';
@@ -74,7 +98,6 @@ function validation(data) {
     }
 
     if (isValid) {
-        // Sanitizacja danych tylko po pomyślnej walidacji
         const sanitizedData = {
             firstname: DOMPurify.sanitize(data.firstname),
             lastname: DOMPurify.sanitize(data.lastname),
@@ -84,7 +107,7 @@ function validation(data) {
         };
 
         sending(sanitizedData);
-        reset(); // Resetowanie formularza po pomyślnym wysłaniu
+        reset();
         resetClasses();
     }
 }
@@ -122,7 +145,7 @@ function validatePhone(phone) {
 }
 
 function validateDescription(text) {
-    return /^[a-zA-Z0-9\s.,!?'"()]*$/.test(text);
+    return /^[\p{L}\p{N}\s.,!?'"()\-:;]*$/u.test(text);
 }
 
 contactForm.addEventListener('submit', handleFormSubmit);
