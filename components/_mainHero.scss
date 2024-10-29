@@ -8,22 +8,27 @@
 
 
     &__gradient{
+      ///// turn off, must be turn on 
        width: 20%;
         position: absolute;
         z-index: -1;
         bottom: 68%;
        right: 5%;
+       display: none;
     }
 
        &__FFront{
 
        &__SingUp{
-/// wystylować 
+
 
            text-align: center;
 
+           @include mq(medium-samll){
+            margin-top: 15%;
+           }
      
-           ///width: ;
+        
            &__btn{
 
                   

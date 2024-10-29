@@ -16,31 +16,39 @@
         margin-right: 5%;
         left: 82.5%;
         top: 10%;
+        z-index: 5;
         ///display: none;
+       cursor: pointer;
        
         
 
         @include mq(medium-large){
             left: calc(82.5% - 10vw);
             transition: left 0.5s ease;
+           
           }
        
         @include mq(medium){
             left: calc(82.5% - 15vw);
+            top: -25px;
             transition: left 0.5s ease;
+            
           }
        
 
     @include mq(medium-samll){
             left: calc(82.5% - 28vw);
             transition: left 0.5s ease;
+            top: -5px;
+            
+          }
+
+          @include mq(after-medium){
+            top: 5px;
           }
 
          
-        &:hover{
-            cursor: pointer;
-            background-color: rgb(0, 107, 189);
-        }
+        
         
     }
 
@@ -51,7 +59,7 @@
        /// width: 700px;
         padding: 0.8%;
         margin-bottom: -2%;
-
+        text-align: center;
       
 
         
@@ -61,13 +69,13 @@
 
 
         .all {
-          margin: 0 4%;
+          margin: 0 2%;
        /// margin-left:3.5%;
         @include mq(xxlarge){
-            margin: 0 3.5%;
+           /// margin: 0 3.5%;
         }
         @include mq(xlarge){
-            margin: 0 2.5%;
+           /// margin: 0 2.5%;
         }
 
         @include mq(after-xlarge){
@@ -117,16 +125,22 @@
         }
 
         @include mq(medium){
-            top: 5px;
+             top: -25px;
             transition: top 0.5s ease;
            width: 100px;
         }
 
-        @include mq(small){
+        @include mq(medium-samll){
+            top: -5px;
           
         }
 
+        @include mq(after-medium){
+          top: 5px;
+          
+        }
 
+        
         
     }
 
@@ -139,29 +153,27 @@
 
         
 
-         width: calc(100% - (100% * 0.53));
+         width: calc(100% - (100% * 0.55));
 
          @include mq(xxxlarge){
-            width: calc(100% - (100% * 0.45));
+           //// width: calc(100% - (100% * 0.45));
          } 
 
          @include mq (xxlarge){
-            width: calc(100% - (100% * 0.45));
+            width: calc(100% - (100% * 0.53));
          } 
 
-
-         
-         @include mq(xxlarge){
-            width: calc(100% - (100% * 0.45));
-         } 
+         @include mq(xlarge){
+            width: calc(100% - (100% * 0.52));
+         }
        
 
          @include mq(mid-after-large){
-            width: calc(100% - (100% * 0.48));
+         width: calc(100% - (100% * 0.48));
          } 
 
          @include mq(large){
-            width: calc(100% - (100% * 0.48));
+           /// width: calc(100% - (100% * 0.48));
          }
 
 
@@ -181,11 +193,40 @@
        position: absolute;
         right: 5.5%;
         top: 25%;
+        z-index: 10;
+       transform: translateX(calc(100% - (100% * 0.98)));
         
+       @include mq(xlarge){
+        transform: translateX(calc(100% - (100% * 0.78)));
+       }
+
+       @include mq(mid-after-large){
+        transform: translateX(calc(100% - (100% * 0.68)));
+        transform: translateY(50px);
+        transition: transform 0.3s ease; 
+       }
+
+       @include mq(large){
+        transform: translate(50px,50px);
+       }
+       @include mq(medium-large){
+        transform: translate(-25px,-15px);
+       }
+
+       @include mq(medium){
+        transform: translate(-25px,-25px);
+       }
+
+       @include mq(medium-samll){
+        transform: translate(5px,-5px);
+        
+       }
+         
       &__inp{
         
         display: inline-block;
         text-indent: 5px;
+        z-index: 10;
         outline: none;
         border-radius: 20px;
         border: 0;
@@ -209,11 +250,18 @@
        height: 40px;
        width: 60px;
       color: white;
-
+      
       &:hover{
         cursor: pointer;
         background-color: rgb(57, 56, 56);
         border: 2px solid rgb(57, 56, 56);
+      }
+
+      &:active{
+        
+        background-color: rgb(57, 56, 56);
+        border: 2px solid rgb(57, 56, 56);
+        transition: background-color 0.2s ease, border-color 0.3s ease; 
       }
         
       }

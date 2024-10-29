@@ -158,6 +158,7 @@ const waitListBtn = document.querySelector('#waitlist-btn-switch');
 const waitlist_email = document.querySelector('#waitlist-email');
 
 waitListBtn.addEventListener('click', (event) => {
+    waitlist_email.value = '';
     waitListForm.classList.add('header__waitlist-form');
     waitListBtn.style.display = 'none';
 });
@@ -209,3 +210,22 @@ async function readySendWaitList(cleanEmail) {
 }
 
 waitListForm.addEventListener('submit', handleWaitListSub);
+let timeOut;
+
+function outFocus(event) {
+    if (event.target) {
+        timeOut = setTimeout(() => {
+            waitListForm.classList.remove('header__waitlist-form');
+            waitListBtn.style.display = 'block';
+        }, 4 * 1000);
+        console.log('timeout start ');
+    }
+}
+
+waitlist_email.addEventListener('blur', outFocus);
+waitlist_email.addEventListener('focus', (event) => {
+    if (event.target) {
+        clearTimeout(timeOut);
+        console.log('time reset ');
+    }
+});
