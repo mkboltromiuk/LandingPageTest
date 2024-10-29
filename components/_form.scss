@@ -73,19 +73,26 @@
               @include mq (medium-samll){
               ///margin-left: 15%;
               
-                transform: scale(0.8);
+                transform: scale(1);
     transform-origin: calc(50% - (45% / 2))  0%; /* lub top center */
     transition: transform 1.5s ease;
-   
+    ////transform: translateX(-12.5px);
+                 display: flex;
+                 width: 400px;
+                 left: -5.5px;
                
               }
 
               @include mq (after-medium){
               
-                transform: scale(0.72);
+                ///transform: scale(0.72);
     transform-origin: calc(50% - (68% / 2))  0%; /* lub top center */
     transition: transform 1.5s ease;
-               
+          left: -0.5px;
+              }
+
+              @include mq(small){
+                right: 15%;
               }
               
               &__emailDiv{
@@ -116,6 +123,13 @@
                   top: 8%;
                   right: 5.5%;
                  
+                  @include mq(medium-samll){
+                   
+                    right: 0;
+                    
+                 
+                    
+                  }
               
   
                   &__h3{
@@ -141,6 +155,13 @@
                   &__div{
                     margin-top: 5%;
                     margin-left: 15%;
+
+                    @include mq(medium-samll){
+                      width: 90%;
+                     margin: 0 auto;
+                     margin-top: 5%;
+
+                    }
                     
                  
                       &__inpFN{
@@ -152,8 +173,16 @@
                           border: 1px solid rgba(255, 255, 255, 0.2);
                           border-radius: 5px;
   
-                          
+                           margin: 0 auto;
   
+
+                           @include mq(medium-samll){
+                            display: flex;
+                            width: 85%;
+                            margin-top: 5%;
+                           }
+                           
+
                       }
       
                       &__inpLN{
@@ -164,6 +193,14 @@
                       background: rgba(255, 255, 255, 0.05);
                       border: 1px solid rgba(255, 255, 255, 0.2);
                       border-radius: 5px;
+                      
+                      margin:  0 auto;
+
+                      @include mq(medium-samll){
+                        display: flex;
+                        width: 85%;
+                        margin-top: 5%;
+                       }
   
                       }
                   }
@@ -182,11 +219,15 @@
                       border: 1px solid rgba(255, 255, 255, 0.2);
                       border-radius: 5px;
 
+                      
+
                       @include mq (medium-samll){
-                      ///margin-left: 5%;
-                        ///margin-right: 15%;
-                        
+                      margin:  0 auto;
+                      margin-top: 2.5%;
+
                        
+                        width: 305px;
+                      
                       }
                       
                   }
@@ -202,6 +243,17 @@
                       background: rgba(255, 255, 255, 0.05);
                       border: 1px solid rgba(255, 255, 255, 0.2);
                       border-radius: 5px;
+
+
+
+                      @include mq (medium-samll){
+                        margin:  0 auto;
+                        margin-top: 2.5%;
+  
+                         
+                          width: 305px;
+                        
+                        }
                   }
       
                   &__message{
@@ -218,6 +270,15 @@
                       background: rgba(255, 255, 255, 0.05);
                       border: 1px solid rgba(255, 255, 255, 0.2);
                       border-radius: 5px;
+
+                      @include mq (medium-samll){
+                        margin:  0 auto;
+                        margin-top: 2.5%;
+  
+                         
+                          width: 305px;
+                        
+                        }
                   }
       
       
@@ -226,11 +287,20 @@
                       margin-top: 2.5%;
                       width: 385px;
                       padding: 2% 2%;
+                      
                  
-                      @include extra-btn
+                      @include extra-btn;
                       
                     
-  
+                      @include mq (medium-samll){
+                        margin:  0 auto;
+                        margin-top: 2.5%;
+                        width: 305px;
+                         display: flex;
+                         justify-content: center;
+                         
+                        
+                        }
                       
                   }
               }

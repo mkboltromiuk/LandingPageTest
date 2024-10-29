@@ -65,27 +65,67 @@ border-radius: 20px;
       
 
         &__divTwo{
-    margin: auto;
+  margin: 0 auto;
+
 border-radius: 20px;
 width: 40%;
-min-width:350px ;
+min-width:400px ;
 text-align: left;
-///@include glass-dark-blue;
+
+@include mq(large){
+  
+   
+     width: 50%;
+  
+   
+}
+
 
 &__h2{
     font-size: 40px;
     margin-top: 5%;
     margin-bottom: 2%;
+
+    @include mq(after-xlarge){
+        width: 100%;
+        text-align: center;
+     }
+
+     @include mq(medium-samll){
+        width: 50%;
+        margin: 0 auto;
+        text-align: center; 
+     }
 }
 
 &__h3{
-text-align: left;
-width: 75%;
-font-size: 20px;
-///margin: auto;
-margin-top: 5%;
 
+
+font-size: 20px;
+
+margin-top: 5%;
 line-height: 25px;
+
+
+@include mq(large){
+  
+   text-align: center;
+
+min-width: 400px;
+
+  
+}
+
+@include mq(medium-samll){
+    
+    font-size: 16.5px;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center; 
+ }
+
+
+
 }
            
 
@@ -98,7 +138,29 @@ line-height: 25px;
                 margin-top: 5%;
                 line-height: 20px;
                 color: hsl(0, 0%, 84%);
+
                 
+                @include mq(after-xlarge){
+                    width: 100%;
+                    text-align: left;
+                 }
+                
+                @include mq(large){
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 350px;
+                margin-top: 5%;
+                    
+                 }
+
+                 @include mq(medium-samll){
+                    width: 80%;
+                    
+                    margin: 0 auto;
+                    margin-top: 5%;
+                    text-align: left; 
+                 }
+
                 
 
             }
@@ -126,15 +188,25 @@ line-height: 25px;
           
                 ///margin: auto;
                 color: white;
-                width: 40%;
+                width: 205px;
+                min-width: 205px;
              
                 height: 12%;
                 margin-bottom: 5%;
                 @include mq(after-xlarge){
                    margin-bottom: 8%;
                 }
-                
 
+                @include mq(after-xlarge){
+                    width: 50%;
+                    margin: 0 auto;
+                }
+                
+                @include mq(large){
+                    width: 50%;
+                    margin: 0 auto;
+                    
+                 }
 
                 &__img{
                     ///margin-left: 1.5%;
