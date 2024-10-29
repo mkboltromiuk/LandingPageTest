@@ -44,7 +44,7 @@
           }
 
           @include mq(after-medium){
-            top: 5px;
+            top: 1px;
           }
 
          
@@ -218,7 +218,7 @@
        }
 
        @include mq(medium-samll){
-        transform: translate(5px,-5px);
+        transform: translate(12.5px,-5px);
         
        }
          
@@ -277,3 +277,4 @@
 .header > * {
     margin-top: 2.5%;
 }
+

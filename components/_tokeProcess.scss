@@ -23,19 +23,23 @@
          @include glass-dark-blue;
             border-radius: 20px;
             width: 70%;
-            
+          
             padding: 1% 3%;
             margin: auto;
             margin-top: 5%;
-            min-width: 350px;
-        
-       
+            ///min-width: 350px;
+            @include mq(medium-to-small){
+               //// display: none;
+              width: 95%;
+            }
             &__svg{
                 /// umieścić dobry svg z figmy 
    
                 width: 100%;
-                
+                height: auto;
                 margin: 0 auto;
+
+                
         
             }
 
@@ -43,6 +47,10 @@
         }
        }
 
+
+
+
+       ///////// hidden comment section \\\\\\\\
 
        &__others{
         //margin: 0 40% 0 40%;
