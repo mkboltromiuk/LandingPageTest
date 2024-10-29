@@ -8,22 +8,27 @@
 
 
     &__gradient{
-       width: 50%;
+      ///// turn off, must be turn on 
+       width: 20%;
         position: absolute;
         z-index: -1;
         bottom: 68%;
        right: 5%;
+       display: none;
     }
 
        &__FFront{
 
        &__SingUp{
-/// wystylować 
+
 
            text-align: center;
 
+           @include mq(medium-samll){
+            margin-top: 15%;
+           }
      
-           ///width: ;
+        
            &__btn{
 
                   
@@ -154,7 +159,7 @@
 
            .animeHero{
             display: block;
-            width: 65vw;
+            width: 70vw;
             height: auto;
             ///min-height:350px;
             //min-width: 400px;

@@ -11,5 +11,9 @@
   "devDependencies": {
     "sass": "^1.79.1",
     "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.6",
+    "dompurify": "^3.1.7"
   }
 }
