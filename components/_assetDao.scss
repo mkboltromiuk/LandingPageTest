@@ -66,18 +66,22 @@ z-index: -1;
 
         &__divTwo{
     margin: 0 auto;
-
+   
    border-radius: 20px;
    width: 40%;
    min-width:400px ;
-   text-align: left;
+   
 
    @include mq(large){
   
-   
      width: 50%;
-  
     
+    }
+
+
+    @include mq(medium-to-small){
+        ///width: 100%;
+        min-width:100% ;
     }
 
 
@@ -106,12 +110,15 @@ z-index: -1;
     margin-top: 5%;
     line-height: 25px;
     ///width: 45vw;
+    /// 
+    @include mq(xlarge){
+        text-align: center;
+    }
   
     @include mq(large){
   
-   
 
-    width: 45vw;
+    width: 408px;
     text-align: center;
     margin: 0 auto;
    
@@ -126,9 +133,10 @@ z-index: -1;
      ///font-size: 16.5px;
       margin: 0 auto;
       margin-top: 5%;
-      text-align: left; 
-      min-width: 275px;
-     
+      ///text-align: center; 
+      ///min-width: 350px;
+       width: 50%;
+      
       }
 
 
@@ -150,8 +158,9 @@ z-index: -1;
                 
                 @include mq(after-xlarge){
                     margin: 0 auto;
+                    margin-top: 5%;
                     width: 100%;
-                    text-align: left;
+                    text-align: center;
                  }
                 
                 @include mq(large){
@@ -163,11 +172,13 @@ z-index: -1;
                  }
 
                  @include mq(medium-samll){
-                    width: 72vw;
+                    ///width: 72vw;
                     
                     margin: 0 auto;
                     margin-top: 5%;
-                    text-align: left; 
+                    text-align: center; 
+                    width: 85%;
+
                    /// word-break: break-all;
                     ///white-space: normal;
                  }

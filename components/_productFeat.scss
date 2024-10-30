@@ -39,8 +39,11 @@
             &__h2{
                
                text-align: left;
-            
-         
+             
+               @include mq(medium){
+                margin:  0 auto;
+                text-align: center;
+               }
                 
             }
 
