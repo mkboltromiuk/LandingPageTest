@@ -29,6 +29,8 @@ function handleFormSubmit(event) {
     };
 
     validation(data);
+
+    /// btn_send_contact.addEventListener('mouseenter', btnAgain);
 }
 
 async function sending(sanitizedData) {
@@ -112,6 +114,7 @@ function validation(data) {
         sending(sanitizedData);
         reset();
         resetClasses();
+        btn_send_contact.textContent = 'Thanks';
     }
 }
 
@@ -153,6 +156,7 @@ function validateDescription(text) {
 
 contactForm.addEventListener('submit', handleFormSubmit);
 
+///// Waitlist \\\\\
 const waitListForm = document.querySelector('#waitlist-form');
 const waitListBtn = document.querySelector('#waitlist-btn-switch');
 const waitlist_email = document.querySelector('#waitlist-email');
@@ -228,4 +232,12 @@ waitlist_email.addEventListener('focus', (event) => {
         clearTimeout(timeOut);
         console.log('time reset ');
     }
+});
+
+const btn_send_contact = document.querySelector('#btn-form-show');
+
+btn_send_contact.addEventListener('mouseleave', (event) => {
+    setTimeout(() => {
+        btn_send_contact.textContent = 'Send';
+    }, 3000);
 });

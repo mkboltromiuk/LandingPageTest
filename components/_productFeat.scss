@@ -5,7 +5,7 @@
 
 
 
-    &__product{
+    &__product{ 
        
 
         
@@ -17,15 +17,17 @@
         );
 
         
-@include mq (large){
-    @include text-list(
+   @include mq (large){
+
+      @include text-list(
         'features',
         $columns:1,
-        
-        
-      );
+       
+       );
 
-}
+     
+  
+  }
 
 
 
@@ -52,16 +54,27 @@
                 @include glass;
 
                 
-            }
+              }
+            
 
-            &__div:nth-child(6),&__div:nth-child(2),&__div:nth-child(3){
+              &__div:nth-child(6),&__div:nth-child(2),&__div:nth-child(3){
+                
                 @include glass-dark-blue;
-
                 
                
-            }
+              }
+
+              
+
+
+
+             
+               
             
-             &__div{
+
+          
+            
+              &__div{
            
                 ///@include neon-glow;
                 border-radius: 20px;
@@ -108,13 +121,36 @@
               
                 }
             
-            }
+              }
 
             
-            
-          
 
-           
+            
+              
+
+              @include mq(large){
+
+                &__div{
+                    min-height: 85%;
+                    min-width: 300px;
+                }
+                
+                &__div:nth-child(1),&__div:nth-child(3){
+                   /// 
+                   @include glass;
+                    
+                  }
+                
+
+                  &__div:nth-child(6),&__div:nth-child(2),&__div:nth-child(4){
+                
+                    @include glass-dark-blue;
+                    
+                   
+                  }
+                  
+
+              }
 
             
             }

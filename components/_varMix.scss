@@ -295,6 +295,8 @@ $margin-top: 10%,
   -webkit-user-select: none;
   touch-action: manipulation;
 
+ 
+  
 
 &:before {
   content: "";
@@ -323,6 +325,9 @@ $margin-top: 10%,
   transition: opacity 0.3s ease-in-out;
   border-radius: 10px;
 
+ 
+
+
 }
 
 @keyframes glowing-button-85 {
@@ -347,9 +352,21 @@ $margin-top: 10%,
   left: 0;
   top: 0;
   border-radius: 10px;
+
+  
 }
 
 border: 1px solid white;
+
+&:hover{
+  
+  &:after{
+    background: 0;
+  }
+
+  
+}
+
 }
 
 

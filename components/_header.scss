@@ -251,18 +251,28 @@
        width: 60px;
       color: white;
       
+      
+      
       &:hover{
         cursor: pointer;
         background-color: rgb(57, 56, 56);
         border: 2px solid rgb(57, 56, 56);
+    
       }
+      
 
+      ///
+
+    
       &:active{
         
         background-color: rgb(57, 56, 56);
         border: 2px solid rgb(57, 56, 56);
         transition: background-color 0.2s ease, border-color 0.3s ease; 
       }
+
+      
+
         
       }
     }

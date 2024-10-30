@@ -92,7 +92,8 @@
               }
 
               @include mq(small){
-                right: 15%;
+                left: -10px;
+               
               }
               
               &__emailDiv{
@@ -199,7 +200,7 @@
                       @include mq(medium-samll){
                         display: flex;
                         width: 85%;
-                        margin-top: 5%;
+                        margin-top: 2.5%;
                        }
   
                       }
@@ -301,6 +302,10 @@
                          
                         
                         }
+
+                  
+
+                       
                       
                   }
               }
@@ -453,4 +458,9 @@ input[type=number] {
 
 textarea {
   resize: none;
+}
+
+.--btn_action{
+   
+  
 }
