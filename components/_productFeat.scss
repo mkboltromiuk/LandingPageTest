@@ -5,7 +5,7 @@
 
 
 
-    &__product{
+    &__product{ 
        
 
         
@@ -17,15 +17,17 @@
         );
 
         
-@include mq (large){
-    @include text-list(
+   @include mq (large){
+
+      @include text-list(
         'features',
         $columns:1,
-        
-        
-      );
+       
+       );
 
-}
+     
+  
+  }
 
 
 
@@ -37,8 +39,11 @@
             &__h2{
                
                text-align: left;
-            
-         
+             
+               @include mq(medium){
+                margin:  0 auto;
+                text-align: center;
+               }
                 
             }
 
@@ -52,20 +57,31 @@
                 @include glass;
 
                 
-            }
+              }
+            
 
-            &__div:nth-child(6),&__div:nth-child(2),&__div:nth-child(3){
+              &__div:nth-child(6),&__div:nth-child(2),&__div:nth-child(3){
+                
                 @include glass-dark-blue;
-
                 
                
-            }
+              }
+
+              
+
+
+
+             
+               
             
-             &__div{
+
+          
+            
+              &__div{
            
                 ///@include neon-glow;
                 border-radius: 20px;
-                width: 73%;
+                width: 85%;
 
                 margin:  auto;
                 margin-top: 5%;
@@ -82,7 +98,7 @@
                 &__inside{
                    
                     &__img{
-                      display: none;
+                      //display: none;
                     }
                     
                     &__h4{
@@ -108,13 +124,36 @@
               
                 }
             
-            }
+              }
 
             
-            
-          
 
-           
+            
+              
+
+              @include mq(large){
+
+                &__div{
+                    min-height: 85%;
+                    min-width: 300px;
+                }
+                
+                &__div:nth-child(1),&__div:nth-child(3){
+                   /// 
+                   @include glass;
+                    
+                  }
+                
+
+                  &__div:nth-child(6),&__div:nth-child(2),&__div:nth-child(4){
+                
+                    @include glass-dark-blue;
+                    
+                   
+                  }
+                  
+
+              }
 
             
             }

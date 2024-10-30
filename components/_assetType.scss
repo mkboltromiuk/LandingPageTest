@@ -18,6 +18,11 @@
          margin-left: 10%;
             color: white;
             font-size: 40px;
+
+            @include mq(medium){
+                margin:  0 auto;
+                text-align: center;
+            }
            
             
         }

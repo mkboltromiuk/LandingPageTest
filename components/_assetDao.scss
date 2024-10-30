@@ -46,9 +46,9 @@ z-index: -1;
 
 ////@include glass;
 
+  border-radius: 20px;
 
-border-radius: 20px;
-&__img{
+  &__img{
     display: block;
     width: 100%;
     height: auto;
@@ -58,30 +58,34 @@ border-radius: 20px;
     @include mq(after-xlarge){
         width: 45%;
         min-width:350px ;
-    }
+      }
    
-}
+   }
         }
       
 
         &__divTwo{
-  margin: 0 auto;
-
-border-radius: 20px;
-width: 40%;
-min-width:400px ;
-text-align: left;
-
-@include mq(large){
-  
+    margin: 0 auto;
    
+   border-radius: 20px;
+   width: 40%;
+   min-width:400px ;
+   
+
+   @include mq(large){
+  
      width: 50%;
-  
-   
-}
+    
+    }
 
 
-&__h2{
+    @include mq(medium-to-small){
+        ///width: 100%;
+        min-width:100% ;
+    }
+
+
+  &__h2{
     font-size: 40px;
     margin-top: 5%;
     margin-bottom: 2%;
@@ -96,37 +100,48 @@ text-align: left;
         margin: 0 auto;
         text-align: center; 
      }
-}
+  }
 
-&__h3{
-
-
-font-size: 20px;
-
-margin-top: 5%;
-line-height: 25px;
+    &__h3{
 
 
-@include mq(large){
-  
-   text-align: center;
+    font-size: 20px;
 
-min-width: 400px;
-
-  
-}
-
-@include mq(medium-samll){
-    
-    font-size: 16.5px;
-    margin: 0 auto;
     margin-top: 5%;
-    text-align: center; 
- }
+    line-height: 25px;
+    ///width: 45vw;
+    /// 
+    @include mq(xlarge){
+        text-align: center;
+    }
+  
+    @include mq(large){
+  
+
+    width: 408px;
+    text-align: center;
+    margin: 0 auto;
+   
+    }
+
+     @include mq(medium){
+        min-width: 280px;
+     }
+
+     @include mq(medium-samll){
+    
+     ///font-size: 16.5px;
+      margin: 0 auto;
+      margin-top: 5%;
+      ///text-align: center; 
+      ///min-width: 350px;
+       width: 50%;
+      
+      }
 
 
 
-}
+   }
            
 
 
@@ -134,15 +149,18 @@ min-width: 400px;
                
                 text-align: left;
                 width: 80%;
-               // margin: auto;
+                ///margin: 0 auto;
+                width: 400px;
                 margin-top: 5%;
                 line-height: 20px;
                 color: hsl(0, 0%, 84%);
 
                 
                 @include mq(after-xlarge){
+                    margin: 0 auto;
+                    margin-top: 5%;
                     width: 100%;
-                    text-align: left;
+                    text-align: center;
                  }
                 
                 @include mq(large){
@@ -154,11 +172,15 @@ min-width: 400px;
                  }
 
                  @include mq(medium-samll){
-                    width: 80%;
+                    ///width: 72vw;
                     
                     margin: 0 auto;
                     margin-top: 5%;
-                    text-align: left; 
+                    text-align: center; 
+                    width: 85%;
+
+                   /// word-break: break-all;
+                    ///white-space: normal;
                  }
 
                 
@@ -188,10 +210,10 @@ min-width: 400px;
           
                 ///margin: auto;
                 color: white;
-                width: 205px;
+                width: 280px;
                 min-width: 205px;
              
-                height: 12%;
+                height: 10%;
                 margin-bottom: 5%;
                 @include mq(after-xlarge){
                    margin-bottom: 8%;
@@ -215,7 +237,7 @@ min-width: 400px;
                 }
 
             }
-        }
+   }
         
 
     }
