@@ -1,20 +1,22 @@
 
 .main{
 
-
 &__hero{
-    position: relative;
-    z-index: 1;
-
+   
+ position: relative;
+    z-index: 10;
 
     &__gradient{
-      ///// turn off, must be turn on 
-       width: 20%;
-        position: absolute;
-        z-index: -1;
+      position: absolute;
+       width: 90%;
+       transform: skew(86deg,0deg);
+       transform: rotate(160deg);
+     
+        z-index: -5;
         bottom: 68%;
        right: 5%;
-       display: none;
+       top: 20%;
+       
     }
 
        &__FFront{

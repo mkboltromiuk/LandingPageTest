@@ -3,7 +3,7 @@
 .main{
 
 
-
+ 
 
     &__product{ 
        
@@ -35,7 +35,23 @@
         margin-top: 12.5%;
    
         &__features{
-           ///font-family: 'Open Sans';
+          position: relative;
+          &__gradient{
+            position: absolute;
+            top: 20%;
+            left: -5%;
+            z-index: -5;
+            ///transform: translate(-2.5%,5%);
+            ///transform: skew(5deg,50deg);
+            transform: rotate(70deg);
+            ///transform: rotate(50deg);
+            width: 100%;
+            
+            filter: drop-shadow(0 0 0.25rem rgb(220, 20, 190))blur(80px) brightness(0.6);
+            
+           
+          }
+          
             &__h2{
                
                text-align: left;
@@ -47,11 +63,15 @@
                 
             }
 
+            
+
             &__wrapper{
                
-                width:80%;
+              width:80%;
                margin: auto;
+              
               margin-top: 2.5%;
+              
 
               &__div:nth-child(3n+1),&__div:nth-child(5){
                 @include glass;
@@ -71,7 +91,7 @@
 
 
 
-             
+              
                
             
 
@@ -81,29 +101,36 @@
            
                 ///@include neon-glow;
                 border-radius: 20px;
-                width: 85%;
+                width: 65%;
+                height: 75%;
 
-                margin:  auto;
+                margin: 0 auto;
                 margin-top: 5%;
-                
+               
                 padding: 5.5%;
                 padding-bottom: 10%;
-                min-height: 75%;
+                ///min-height: 75%;
                 max-height: 75%;
                 min-width: 289px;
-                
+               
                 
                
 
                 &__inside{
-                   
+                   display: flex;
+                   flex-direction: column;
                     &__img{
-                      //display: none;
+                     
+                    
+                     width: 15%;
+                     
+                      
                     }
                     
                     &__h4{
+                      margin-top: 5%;
                         width:100%;
-
+                       text-align: center;
                         @include mq(medium-samll){
                             font-size: 18px;
                         }
@@ -117,6 +144,9 @@
                     margin-top: 2.5%;
                     margin-bottom: 2.5%;
                     color:  hsl(0, 0%, 84%);
+                    margin: 0 auto;
+                    text-align: center;
+                    width: 95%;
                     
                     @include mq(medium-samll){
                         font-size: 14.5px;

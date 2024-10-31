@@ -24,7 +24,7 @@ function handleFormSubmit(event) {
         firstname: firstname.value,
         lastname: lastname.value,
         email: email.value,
-        phone: phone.value,
+        phone: (phone.value = null),
         description: textarea.value,
     };
 
@@ -34,6 +34,7 @@ function handleFormSubmit(event) {
 }
 
 async function sending(sanitizedData) {
+    console.log(sanitizedData.phone);
     try {
         const { data, error } = await supabase
             .from('clients')
@@ -62,7 +63,7 @@ function validation(data) {
     resetClasses();
 
     let isValid = true;
-
+    console.log(data);
     if (data.firstname.length < 3) {
         firstname.classList.add('Alertinfo');
         firstname.placeholder = 'Enter more than five letters';
@@ -84,11 +85,7 @@ function validation(data) {
         isValid = false;
     }
 
-    if (
-        !validatePhone(data.phone) ||
-        data.phone.length < 5 ||
-        data.phone.length > 12
-    ) {
+    if (!validatePhone(data.phone)) {
         phone.classList.add('Alertinfo');
         phone.placeholder = 'Please enter a valid phone number';
         phone.value = '';
@@ -107,7 +104,7 @@ function validation(data) {
             firstname: DOMPurify.sanitize(data.firstname),
             lastname: DOMPurify.sanitize(data.lastname),
             email: DOMPurify.sanitize(data.email),
-            phone: DOMPurify.sanitize(data.phone),
+            phone: Number.parseInt(DOMPurify.sanitize(data.phone)),
             description: DOMPurify.sanitize(data.description),
         };
 
@@ -115,6 +112,7 @@ function validation(data) {
         reset();
         resetClasses();
         btn_send_contact.textContent = 'Thanks';
+        console.log(sanitizedData.phone);
     }
 }
 
@@ -145,7 +143,8 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-    return /^(\+?\d{1,3}[-.\s]?)?(\(?\d{1,4}?\)?[-.\s]?)?(\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9})$/.test(
+    console.log(phone);
+    return /^(null|0|$|^(\+?\d{1,3}[-.\s]?)?(\(?\d{1,4}?\)?[-.\s]?)?(\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9})$)/.test(
         phone
     );
 }
@@ -198,19 +197,52 @@ function sendDataWaitList(emailData) {
 }
 
 async function readySendWaitList(cleanEmail) {
+    let isAvailable = false;
+    let test;
     try {
-        const { data, error } = await supabase
+        let { data: Waitlist, error } = await supabase
             .from('Waitlist')
-            .insert([{ email: cleanEmail }])
-            .select();
+            .select('email');
+
         if (error) {
             throw error;
-        } else {
-            console.log(data);
         }
+
+        test = Waitlist.map((all) => {
+            return all.email;
+        });
     } catch (error) {
-        console.error('Wrong or bad request:', error.message);
+        console.error(error);
     }
+    if (!test.includes(cleanEmail)) {
+        try {
+            const { data, error } = await supabase
+                .from('Waitlist')
+                .insert([{ email: cleanEmail }])
+                .select();
+            if (error) {
+                throw error;
+            } else {
+                console.log(data);
+            }
+        } catch (error) {
+            console.error('Wrong or bad request:', error.message);
+        }
+    } else {
+        waitlist_email.placeholder = 'We have that email';
+        waitListForm.classList.add('header__waitlist-form');
+        waitListBtn.style.display = 'none';
+        console.log('we have that email');
+        waitlist_email.style.color = 'red';
+        setTimeout(() => {
+            waitlist_email.placeholder = 'Your Email';
+            waitlist_email.style.color = 'black';
+        }, 4000);
+    }
+    /*
+    
+
+*/
 }
 
 waitListForm.addEventListener('submit', handleWaitListSub);

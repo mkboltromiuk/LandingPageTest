@@ -22,8 +22,10 @@ margin-left: 15%;
 
 &__imgGradientII{
 position: absolute;
-top: -25%;
-z-index: -1;
+top: -45%;
+width: 70%;
+left: 5%;
+z-index: -2;
 
 }
     &__TAsset{
@@ -50,7 +52,7 @@ z-index: -1;
 
   &__img{
     display: block;
-    width: 100%;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     border-radius: 20px;
@@ -203,31 +205,44 @@ z-index: -1;
                 align-items: center;
                 justify-content: center;
                 gap: 5%;
-                padding: 2%;
+                ///padding: 1%;
                 @include btn-def;
                 ///text-indent: -25px;
                 
           
                 ///margin: auto;
                 color: white;
-                width: 280px;
-                min-width: 205px;
+                width: 250px;
+                min-width: 150px;
              
-                height: 10%;
+               height: 40px;
                 margin-bottom: 5%;
+                
+                @include mq(xxxlarge){
+                 
+                 
+                }
+
                 @include mq(after-xlarge){
                    margin-bottom: 8%;
+                
                 }
 
                 @include mq(after-xlarge){
                     width: 50%;
                     margin: 0 auto;
+                   
                 }
                 
                 @include mq(large){
                     width: 50%;
                     margin: 0 auto;
                     
+                 }
+
+                 @include mq(medium){
+                    width: 55%;
+                    margin: 0 auto;
                  }
 
                 &__img{

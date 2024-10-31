@@ -1,4 +1,6 @@
 .header {
+  position: relative;
+  z-index: 20;
     display: flex;
     position: relative;
     justify-content: center;
@@ -16,7 +18,7 @@
         margin-right: 5%;
         left: 82.5%;
         top: 10%;
-        z-index: 5;
+        z-index: 10;
         ///display: none;
        cursor: pointer;
        
@@ -69,7 +71,11 @@
 
 
         .all {
-          margin: 0 2%;
+          margin: 0 3.2%;
+
+          @include mq(xxxlarge){
+            margin: 0 2%;
+          }
        /// margin-left:3.5%;
         @include mq(xxlarge){
            /// margin: 0 3.5%;
@@ -223,7 +229,7 @@
        }
          
       &__inp{
-        
+        position: relative;
         display: inline-block;
         text-indent: 5px;
         z-index: 10;
