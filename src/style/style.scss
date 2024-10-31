@@ -63,6 +63,12 @@ table {
 
 
 
+.main{
+    
+    position: relative;
+    z-index: 10;
+
+}
 
 
 
@@ -98,15 +104,20 @@ body{
 
 .longGradient{
     position: relative;
-    z-index: 2;
+    z-index: -2;
 }
 
 .imgLongGradient{
     position: absolute;
-    z-index: -2;
-   width: 95%;
-    top: -10%;
-    left: -10%;
+    z-index: -5;
+    
+   width: 650px;
+   height: auto;
+   transform: skew(35deg,5deg);
+   filter: blur(105px);
+   
+    top: 32.5%;
+    left: 30%;
 }
 
 
